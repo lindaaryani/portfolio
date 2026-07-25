@@ -4,18 +4,16 @@ export const profile = {
   role: "Information Systems Student",
 
   tagline:
-    "Cloud Computing Enthusiast • Future Apple Developer Academy Learner",
+    "Cloud Computing Enthusiast • Apple Developer Academy Aspirant",
 
   bio:
-    "I am an Information Systems student who enjoys building modern web applications and continuously learning cloud computing, cybersecurity, and software development. I enjoy turning ideas into practical digital solutions that create real impact.",
-
-  university: "ITB STIKOM Bali",
+    "I build clean, responsive, and user-focused web applications while continuously exploring cloud computing, cybersecurity, and software engineering.",
 
   location: "Bali, Indonesia",
 
-  email: "lindaaryani116@gmail.com",
+  email: "YOUR EMAIL",
 
-  github: "https://github.com/lindaaryani",
+  github: "YOUR GITHUB",
 
-  linkedin: "https://linkedin.com/in/lindaaryani",
+  linkedin: "YOUR LINKEDIN",
 };
