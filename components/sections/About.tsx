@@ -1,0 +1,215 @@
+"use client";
+
+import { motion } from "framer-motion";
+import {
+  HiAcademicCap,
+  HiCode,
+  HiLocationMarker,
+  HiSparkles,
+  HiCheckCircle,
+} from "react-icons/hi";
+
+import SectionWrapper from "@/components/ui/SectionWrapper";
+import SectionTitle from "@/components/ui/SectionTitle";
+import GlassCard from "@/components/ui/GlassCard";
+
+import { profile } from "@/data/portfolio";
+
+const highlights = [
+  "Cloud Computing",
+  "Web Development",
+  "Cybersecurity",
+  "Backend Development",
+];
+
+export default function About() {
+  return (
+    <SectionWrapper id="about">
+      <SectionTitle
+        title="About Me"
+        subtitle="Get to know me"
+      />
+
+      <div className="mt-16 grid gap-14 lg:grid-cols-2">
+
+        {/* LEFT */}
+
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: -40,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: .6,
+          }}
+        >
+
+          <h3 className="text-4xl font-black text-slate-900 dark:text-white">
+
+            Building Digital Solutions with Curiosity.
+
+          </h3>
+
+          <p className="mt-8 leading-8 text-slate-600 dark:text-slate-300">
+
+            {profile.description}
+
+          </p>
+
+          <div className="mt-10 space-y-5">
+
+            {highlights.map((item) => (
+
+              <div
+                key={item}
+                className="flex items-center gap-4"
+              >
+
+                <div className="rounded-full bg-blue-100 p-2 dark:bg-blue-500/20">
+
+                  <HiCheckCircle
+                    className="text-xl text-blue-600"
+                  />
+
+                </div>
+
+                <span className="font-medium text-slate-700 dark:text-slate-200">
+
+                  {item}
+
+                </span>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </motion.div>
+
+        {/* RIGHT */}
+
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: 40,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: .6,
+          }}
+          className="grid gap-6 sm:grid-cols-2"
+        >
+                    <GlassCard>
+            <div className="flex items-center gap-4">
+              <div className="rounded-2xl bg-blue-100 p-3 dark:bg-blue-500/20">
+                <HiAcademicCap className="text-3xl text-blue-600 dark:text-blue-400" />
+              </div>
+
+              <div>
+                <p className="text-sm text-slate-500 dark:text-slate-400">
+                  Education
+                </p>
+
+                <h4 className="mt-1 text-lg font-bold text-slate-900 dark:text-white">
+                  {profile.university}
+                </h4>
+
+                <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                  Information Systems
+                  <br />
+                  2024 - Present
+                </p>
+              </div>
+            </div>
+          </GlassCard>
+
+          <GlassCard>
+            <div className="flex items-center gap-4">
+              <div className="rounded-2xl bg-cyan-100 p-3 dark:bg-cyan-500/20">
+                <HiCode className="text-3xl text-cyan-600 dark:text-cyan-400" />
+              </div>
+
+              <div>
+                <p className="text-sm text-slate-500 dark:text-slate-400">
+                  Current Focus
+                </p>
+
+                <h4 className="mt-1 text-lg font-bold text-slate-900 dark:text-white">
+                  Cloud & Full Stack
+                </h4>
+
+                <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                  Next.js
+                  <br />
+                  Google Cloud
+                  <br />
+                  Cybersecurity
+                </p>
+              </div>
+            </div>
+          </GlassCard>
+
+          <GlassCard>
+            <div className="flex items-center gap-4">
+              <div className="rounded-2xl bg-emerald-100 p-3 dark:bg-emerald-500/20">
+                <HiLocationMarker className="text-3xl text-emerald-600 dark:text-emerald-400" />
+              </div>
+
+              <div>
+                <p className="text-sm text-slate-500 dark:text-slate-400">
+                  Location
+                </p>
+
+                <h4 className="mt-1 text-lg font-bold text-slate-900 dark:text-white">
+                  {profile.location}
+                </h4>
+
+                <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                  Available for remote collaboration and internship opportunities.
+                </p>
+              </div>
+            </div>
+          </GlassCard>
+
+          <GlassCard>
+            <div className="flex items-center gap-4">
+              <div className="rounded-2xl bg-purple-100 p-3 dark:bg-purple-500/20">
+                <HiSparkles className="text-3xl text-purple-600 dark:text-purple-400" />
+              </div>
+
+              <div>
+                <p className="text-sm text-slate-500 dark:text-slate-400">
+                  Career Goal
+                </p>
+
+                <h4 className="mt-1 text-lg font-bold text-slate-900 dark:text-white">
+                  Apple Developer Academy
+                </h4>
+
+                <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+                  Building impactful digital products while continuously learning modern technologies.
+                </p>
+              </div>
+            </div>
+          </GlassCard>
+
+        </motion.div>
+      </div>
+    </SectionWrapper>
+  );
+}
+        
