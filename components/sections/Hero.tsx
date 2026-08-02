@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 
 import { motion } from "framer-motion";
 
@@ -16,6 +15,7 @@ import {
 } from "react-icons/hi";
 
 import Button from "@/components/ui/Button";
+import Badge from "@/components/ui/Badge";
 import GradientText from "@/components/ui/GradientText";
 
 import {
@@ -35,9 +35,7 @@ export default function Hero() {
 
         <div className="absolute -left-32 top-20 h-96 w-96 rounded-full bg-blue-500/20 blur-[120px]" />
 
-        <div className="absolute right-0 top-60 h-[420px] w-[420px] rounded-full bg-cyan-400/20 blur-[150px]" />
-
-        <div className="absolute bottom-0 left-1/2 h-80 w-80 -translate-x-1/2 rounded-full bg-indigo-400/10 blur-[140px]" />
+        <div className="absolute right-0 top-60 h-[420px] w-[420px] rounded-full bg-blue-400/10 blur-[150px]" />
 
       </div>
 
@@ -62,23 +60,11 @@ export default function Hero() {
 
           {/* Badge */}
 
-          <div className="inline-flex items-center gap-3 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-5 py-2">
-
-            <span className="relative flex h-3 w-3">
-
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
-
-              <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-500" />
-
-            </span>
-
-            <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">
-
+          {profile.available && (
+            <Badge pulse tone="emerald">
               Available for Internship
-
-            </span>
-
-          </div>
+            </Badge>
+          )}
 
           {/* Heading */}
 
@@ -102,7 +88,7 @@ export default function Hero() {
 
             <br />
 
-            I'm{" "}
+            I&apos;m{" "}
 
             <GradientText>
 
@@ -184,28 +170,18 @@ export default function Hero() {
             className="mt-10 flex flex-wrap gap-4"
           >
 
-            <Link href="#projects">
+            <Button href="#projects">
+              View Projects
+            </Button>
 
-              <Button>
-
-                View Projects
-
-              </Button>
-
-            </Link>
-
-            <a
+            <Button
               href={profile.resume}
               target="_blank"
+              rel="noopener noreferrer"
+              variant="outline"
             >
-
-              <Button variant="outline">
-
-                Download CV
-
-              </Button>
-
-            </a>
+              Download CV
+            </Button>
 
           </motion.div>
 
@@ -221,25 +197,28 @@ export default function Hero() {
               href={profile.github}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit GitHub profile"
               className="rounded-xl border border-slate-200 bg-white p-3 text-2xl text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-blue-500 dark:hover:text-blue-400"
             >
-              <FaGithub />
+              <FaGithub aria-hidden="true" />
             </a>
 
             <a
               href={profile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit LinkedIn profile"
               className="rounded-xl border border-slate-200 bg-white p-3 text-2xl text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-blue-500 dark:hover:text-blue-400"
             >
-              <FaLinkedin />
+              <FaLinkedin aria-hidden="true" />
             </a>
 
             <a
               href={`mailto:${profile.email}`}
+              aria-label="Send an email"
               className="rounded-xl border border-slate-200 bg-white p-3 text-2xl text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-blue-500 dark:hover:text-blue-400"
             >
-              <HiOutlineMail />
+              <HiOutlineMail aria-hidden="true" />
             </a>
           </motion.div>
 
@@ -253,9 +232,9 @@ export default function Hero() {
           >
             {heroStats.map((item) => (
               <div key={item.label}>
-                <h3 className="text-3xl font-black text-blue-600 dark:text-blue-400">
+                <p className="text-3xl font-black text-blue-600 dark:text-blue-400">
                   {item.value}
-                </h3>
+                </p>
 
                 <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
                   {item.label}
@@ -283,7 +262,7 @@ export default function Hero() {
         >
           <div className="absolute h-[520px] w-[520px] rounded-full bg-blue-500/10 blur-3xl" />
 
-          <div className="relative rounded-full bg-gradient-to-br from-blue-500 via-cyan-400 to-indigo-500 p-2 shadow-2xl">
+          <div className="relative rounded-full bg-gradient-to-br from-blue-600 to-blue-400 p-2 shadow-2xl">
             <div className="rounded-full bg-white p-3 dark:bg-slate-900">
               <Image
                 src={profile.image}
@@ -312,9 +291,9 @@ export default function Hero() {
               Currently
             </p>
 
-            <h4 className="font-bold text-slate-900 dark:text-white">
+            <p className="font-bold text-slate-900 dark:text-white">
               {profile.university}
-            </h4>
+            </p>
           </motion.div>
 
           <motion.div
@@ -331,9 +310,9 @@ export default function Hero() {
               Location
             </p>
 
-            <h4 className="font-bold text-slate-900 dark:text-white">
+            <p className="font-bold text-slate-900 dark:text-white">
               {profile.location}
-            </h4>
+            </p>
           </motion.div>
         </motion.div>
       </div>
@@ -342,6 +321,7 @@ export default function Hero() {
 
       <motion.a
         href="#about"
+        aria-label="Scroll to About section"
         animate={{
           y: [0, 10, 0],
         }}
@@ -351,7 +331,7 @@ export default function Hero() {
         }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-400 transition hover:text-blue-600 dark:text-slate-500 dark:hover:text-blue-400"
       >
-        <HiArrowDown size={30} />
+        <HiArrowDown size={30} aria-hidden="true" />
       </motion.a>
     </section>
   );

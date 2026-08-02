@@ -57,9 +57,6 @@ export default function Achievements() {
                 duration: .5,
                 delay: index * .08,
               }}
-              whileHover={{
-                y: -10,
-              }}
             >
 
               <GlassCard>

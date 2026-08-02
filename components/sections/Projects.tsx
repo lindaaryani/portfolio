@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
-import { HiOutlineExternalLink } from "react-icons/hi";
+import { HiOutlineExternalLink, HiOutlineClock } from "react-icons/hi";
 
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
@@ -52,26 +52,32 @@ export default function Projects() {
 
             <motion.div
               whileHover={{
-                scale: 1.03,
+                scale: 1.02,
               }}
               transition={{
-                duration: .3,
+                duration: .4,
+                ease: "easeOut",
               }}
+              className="group/card relative"
             >
 
-              <GlassCard>
+              {/* Animated glow border — fades in on hover */}
+              <div className="absolute -inset-px rounded-[calc(1.5rem+1px)] bg-gradient-to-r from-blue-600 via-blue-400 to-blue-600 bg-[length:200%_100%] opacity-0 blur transition-opacity duration-500 group-hover/card:opacity-70 group-hover/card:animate-[gradient-move_3s_linear_infinite]" />
+
+              <GlassCard className="relative">
 
                 <div className="group relative overflow-hidden rounded-2xl">
 
                   <Image
                     src={project.image}
-                    alt={project.title}
+                    alt={`${project.title} project screenshot`}
                     width={900}
                     height={600}
-                    className="h-[320px] w-full object-cover transition duration-700 group-hover:scale-110"
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="h-[320px] w-full object-cover transition duration-500 ease-out group-hover:scale-105"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
 
                 </div>
 
@@ -130,28 +136,39 @@ export default function Projects() {
 
               </div>
 
-              <div className="mt-10 flex flex-wrap gap-4">
-                                <a
+              <div className="mt-10 flex flex-wrap items-center gap-4">
+
+                <Button
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
+                  variant="outline"
+                  className="min-w-[140px]"
                 >
-                  <Button variant="outline">
-                    <FaGithub className="mr-2" />
-                    GitHub
-                  </Button>
-                </a>
+                  <FaGithub className="mr-2" aria-hidden="true" />
+                  GitHub
+                </Button>
 
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button>
-                    <HiOutlineExternalLink className="mr-2" />
+                {project.demo && project.demo !== "#" ? (
+                  <Button
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="min-w-[140px]"
+                  >
+                    <HiOutlineExternalLink className="mr-2" aria-hidden="true" />
                     Live Demo
                   </Button>
-                </a>
+                ) : (
+                  <Button
+                    disabled
+                    title="Live demo is not deployed yet"
+                    className="min-w-[140px]"
+                  >
+                    <HiOutlineClock className="mr-2" aria-hidden="true" />
+                    Coming Soon
+                  </Button>
+                )}
 
               </div>
 

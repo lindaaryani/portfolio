@@ -1,3 +1,23 @@
+import { IconType } from "react-icons";
+import {
+  SiHtml5,
+  SiCss,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiPhp,
+  SiMysql,
+  SiGooglecloud,
+  SiFirebase,
+  SiGit,
+  SiGithub,
+  SiPostman,
+  SiFigma,
+} from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+
 // ===============================
 // PROFILE
 // ===============================
@@ -105,36 +125,65 @@ export const experiences = [
 // SKILLS
 // ===============================
 
-export const skills = {
-  frontend: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Tailwind CSS",
-  ],
+// ===============================
+// SKILLS
+// ===============================
 
-  backend: [
-    "PHP",
-    "MySQL",
-  ],
-
-  cloud: [
-    "Google Cloud",
-    "AWS",
-    "Firebase",
-  ],
-
-  tools: [
-    "Git",
-    "GitHub",
-    "VS Code",
-    "Figma",
-    "Postman",
-  ],
+export type SkillItem = {
+  name: string;
+  icon: IconType;
+  color: string;
+  /** Set for icons whose brand color is near-black, so they stay
+   * visible against dark-mode card backgrounds. */
+  invertOnDark?: boolean;
 };
+
+export type SkillCategory = {
+  title: string;
+  items: SkillItem[];
+};
+
+export const skillCategories: SkillCategory[] = [
+  {
+    title: "Frontend",
+    items: [
+      { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
+      { name: "CSS3", icon: SiCss, color: "#1572B6" },
+      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "React", icon: SiReact, color: "#61DAFB" },
+      { name: "Next.js", icon: SiNextdotjs, color: "#000000", invertOnDark: true },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+    ],
+  },
+
+  {
+    title: "Backend",
+    items: [
+      { name: "PHP", icon: SiPhp, color: "#777BB4" },
+      { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+    ],
+  },
+
+  {
+    title: "Cloud",
+    items: [
+      { name: "Google Cloud", icon: SiGooglecloud, color: "#4285F4" },
+      { name: "AWS", icon: FaAws, color: "#FF9900" },
+      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+    ],
+  },
+
+  {
+    title: "Tools",
+    items: [
+      { name: "Git", icon: SiGit, color: "#F05032" },
+      { name: "GitHub", icon: SiGithub, color: "#181717", invertOnDark: true },
+      { name: "Postman", icon: SiPostman, color: "#FF6C37" },
+      { name: "Figma", icon: SiFigma, color: "#F24E1E" },
+    ],
+  },
+];
 // ===============================
 // PROJECTS
 // ===============================
@@ -289,11 +338,4 @@ export type Project = {
 export type Achievement = {
   title: string;
   description: string;
-};
-
-export type SkillCategory = {
-  frontend: string[];
-  backend: string[];
-  cloud: string[];
-  tools: string[];
 };

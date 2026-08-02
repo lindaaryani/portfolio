@@ -1,13 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { HiAcademicCap } from "react-icons/hi";
+import {
+  HiAcademicCap,
+  HiLightBulb,
+  HiSpeakerphone,
+  HiCode,
+} from "react-icons/hi";
 
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import SectionTitle from "@/components/ui/SectionTitle";
 import GlassCard from "@/components/ui/GlassCard";
+import Badge from "@/components/ui/Badge";
 
 import { experiences } from "@/data/portfolio";
+
+/** Picks a more meaningful icon per entry based on its title, without
+ * requiring a new field in data/portfolio.ts. */
+function iconFor(title: string) {
+  if (/research/i.test(title)) return HiLightBulb;
+  if (/speaking/i.test(title)) return HiSpeakerphone;
+  if (/portfolio|project/i.test(title)) return HiCode;
+  return HiAcademicCap;
+}
 
 export default function Experience() {
   return (
@@ -21,12 +36,14 @@ export default function Experience() {
 
         {/* Timeline Line */}
 
-        <div className="absolute left-6 top-0 h-full w-[2px] bg-slate-200 dark:bg-slate-700" />
+        <div className="absolute left-5 top-0 h-full w-[2px] bg-slate-200 sm:left-6 dark:bg-slate-700" />
 
         <div className="space-y-12">
 
-          {experiences.map((item, index) => (
+          {experiences.map((item, index) => {
+            const Icon = iconFor(item.title);
 
+            return (
             <motion.div
               key={item.title}
               initial={{
@@ -44,28 +61,25 @@ export default function Experience() {
                 duration: .5,
                 delay: index * .08,
               }}
-              className="relative flex gap-8"
+              className="relative flex gap-5 sm:gap-8"
             >
 
               {/* Timeline Dot */}
 
-              <div className="relative z-10 mt-5 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 shadow-lg">
+              <div className="relative z-10 mt-5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-600 shadow-lg sm:h-12 sm:w-12">
 
-                <HiAcademicCap
-                  className="text-2xl text-white"
+                <Icon
+                  className="text-xl text-white sm:text-2xl"
+                  aria-hidden="true"
                 />
 
               </div>
 
               {/* Card */}
 
-              <GlassCard>
+              <GlassCard className="flex-1">
 
-                <span className="inline-block rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-600 dark:bg-blue-500/20 dark:text-blue-400">
-
-                  {item.year}
-
-                </span>
+                <Badge>{item.year}</Badge>
 
                 <h3 className="mt-5 text-2xl font-bold text-slate-900 dark:text-white">
 
@@ -88,8 +102,8 @@ export default function Experience() {
               </GlassCard>
 
             </motion.div>
-
-          ))}
+            );
+          })}
           </div>
       </div>
     </SectionWrapper>

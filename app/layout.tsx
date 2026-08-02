@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-
 import "./globals.css";
 
-import ScrollProgress from "@/components/layout/ScrollProgress";
 import ThemeProvider from "@/components/providers/ThemeProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,48 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://portfolio-linda.vercel.app"),
-
-  title: {
-    default: "Ni Kadek Linda Aryani",
-    template: "%s | Ni Kadek Linda Aryani",
-  },
-
+  title: "Linda Aryani | Portfolio",
   description:
-    "Information Systems Student at ITB STIKOM Bali specializing in Cloud Computing, Web Development, and Cybersecurity.",
-
-  keywords: [
-    "Linda Aryani",
-    "Portfolio",
-    "Next.js",
-    "Cloud Computing",
-    "Cybersecurity",
-    "Web Development",
-    "ITB STIKOM Bali",
-  ],
-
-  authors: [
-    {
-      name: "Ni Kadek Linda Aryani",
-    },
-  ],
-
-  creator: "Ni Kadek Linda Aryani",
-
-  openGraph: {
-    title: "Ni Kadek Linda Aryani",
-
-    description:
-      "Personal Portfolio Website",
-
-    url: "https://portfolio-linda.vercel.app",
-
-    siteName: "Linda Portfolio",
-
-    locale: "en_US",
-
-    type: "website",
-  },
+    "Portfolio of Ni Kadek Linda Aryani, Information Systems Student specializing in Cloud Computing, Web Development, and Cybersecurity.",
 };
 
 export default function RootLayout({
@@ -68,21 +28,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-
       <body
-  className={`${geistSans.variable} ${geistMono.variable} antialiased`}
->
-
-  <ThemeProvider>
-
-    <ScrollProgress />
-
-    {children}
-
-  </ThemeProvider>
-
-</body>
-
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ThemeProvider>
+          {children}
+          <Analytics />
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

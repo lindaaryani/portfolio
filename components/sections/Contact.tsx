@@ -51,7 +51,7 @@ export default function Contact() {
 
           <GlassCard>
 
-            <h3 className="text-3xl font-black text-slate-900 dark:text-white">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
 
               Have an idea?
 
@@ -59,7 +59,7 @@ export default function Contact() {
 
             <p className="mt-6 leading-8 text-slate-600 dark:text-slate-300">
 
-              I'm currently open to internships, freelance projects,
+              I&apos;m currently open to internships, freelance projects,
               collaborations, research, and exciting opportunities.
 
             </p>
@@ -152,7 +152,7 @@ export default function Contact() {
 
           <GlassCard>
 
-            <h3 className="text-3xl font-black text-slate-900 dark:text-white">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
 
               Connect With Me
 
@@ -165,39 +165,35 @@ export default function Contact() {
             </p>
 
             <div className="mt-10 flex gap-5">
-                            <a
+
+              <Button
                 href={profile.github}
                 target="_blank"
                 rel="noopener noreferrer"
+                variant="outline"
               >
-                <Button variant="outline">
-                  <FaGithub className="mr-2" />
-                  GitHub
-                </Button>
-              </a>
+                <FaGithub className="mr-2" aria-hidden="true" />
+                GitHub
+              </Button>
 
-              <a
+              <Button
                 href={profile.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button>
-                  <FaLinkedin className="mr-2" />
-                  LinkedIn
-                </Button>
-              </a>
+                <FaLinkedin className="mr-2" aria-hidden="true" />
+                LinkedIn
+              </Button>
 
             </div>
 
-            <a
+            <Button
               href={`mailto:${profile.email}`}
-              className="mt-10 inline-block"
+              className="mt-10 w-full"
             >
-              <Button className="w-full">
-                <HiOutlineMail className="mr-2" />
-                Send Email
-              </Button>
-            </a>
+              <HiOutlineMail className="mr-2" aria-hidden="true" />
+              Send Email
+            </Button>
 
           </GlassCard>
 

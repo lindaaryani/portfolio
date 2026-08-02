@@ -1,0 +1,2263 @@
+diff --git a/app/favicon.ico b/app/favicon.ico
+index 718d6fea4835ec2d246af9800eddb7ffb276240c..31a51323ffa9ae43b566d5ff2faa53fcb0c1085b 100644
+GIT binary patch
+literal 9045
+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
+
+literal 25931
+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
+LrJugUA?W`A8`#=m
+
+diff --git a/app/globals.css b/app/globals.css
+index 390683e..043604a 100644
+--- a/app/globals.css
++++ b/app/globals.css
+@@ -25,19 +25,29 @@ html {
+ body {
+   background: var(--background);
+   color: var(--foreground);
+-  font-family: Arial, Helvetica, sans-serif;
++  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+   transition:
+-    background-color .3s,
+-    color .3s;
++    background-color .35s,
++    color .35s;
+ }
+ 
+-::selection{
+-    background:#2563eb;
+-    color:white;
++::selection {
++  background: #2563eb;
++  color: white;
+ }
+ 
+-body{
+-    transition:
+-        background-color .35s,
+-        color .35s;
++/* Visible keyboard focus ring, hidden for mouse/touch users */
++:focus-visible {
++  outline: 2px solid #2563eb;
++  outline-offset: 3px;
++  border-radius: 4px;
++}
++
++@keyframes gradient-move {
++  0% {
++    background-position: 0% 50%;
++  }
++  100% {
++    background-position: 200% 50%;
++  }
+ }
+\ No newline at end of file
+diff --git a/app/robots.ts b/app/robots.ts
+new file mode 100644
+index 0000000..dc9c93b
+--- /dev/null
++++ b/app/robots.ts
+@@ -0,0 +1,11 @@
++import { MetadataRoute } from "next";
++
++export default function robots(): MetadataRoute.Robots {
++  return {
++    rules: {
++      userAgent: "*",
++      allow: "/",
++    },
++    sitemap: "https://portfolio-linda.vercel.app/sitemap.xml",
++  };
++}
+diff --git a/app/sitemap.ts b/app/sitemap.ts
+new file mode 100644
+index 0000000..b5c9e29
+--- /dev/null
++++ b/app/sitemap.ts
+@@ -0,0 +1,12 @@
++import { MetadataRoute } from "next";
++
++export default function sitemap(): MetadataRoute.Sitemap {
++  return [
++    {
++      url: "https://portfolio-linda.vercel.app",
++      lastModified: new Date(),
++      changeFrequency: "monthly",
++      priority: 1,
++    },
++  ];
++}
+diff --git a/components/layout/Footer.tsx b/components/layout/Footer.tsx
+index 5d1081f..3e2fe39 100644
+--- a/components/layout/Footer.tsx
++++ b/components/layout/Footer.tsx
+@@ -3,39 +3,65 @@ import {
+   FaLinkedin,
+ } from "react-icons/fa";
+ 
+-import { HiOutlineMail } from "react-icons/hi";
++import { HiOutlineMail, HiArrowUp } from "react-icons/hi";
+ 
+ import { profile } from "@/data/portfolio";
+ 
+ export default function Footer() {
+   return (
+     <footer className="border-t border-slate-200 bg-white py-12 dark:border-slate-800 dark:bg-slate-950">
+-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 px-6">
++      <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-8 sm:flex-row sm:items-center sm:justify-between">
+ 
+-        <h2 className="text-2xl font-bold">
+-          Ni Kadek Linda Aryani
+-        </h2>
++        <div className="text-center sm:text-left">
++          <p className="text-lg font-bold text-slate-900 dark:text-white">
++            {profile.name}
++          </p>
+ 
+-        <div className="flex gap-6 text-2xl">
++          <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
++            © {new Date().getFullYear()} · Built with Next.js &amp; Tailwind CSS.
++          </p>
++        </div>
++
++        <div className="flex items-center gap-6 text-2xl">
+ 
+-          <a href={profile.github}>
+-            <FaGithub />
++          <a
++            href={profile.github}
++            target="_blank"
++            rel="noopener noreferrer"
++            aria-label="Visit GitHub profile"
++            className="text-slate-500 transition-colors hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400"
++          >
++            <FaGithub aria-hidden="true" />
+           </a>
+ 
+-          <a href={profile.linkedin}>
+-            <FaLinkedin />
++          <a
++            href={profile.linkedin}
++            target="_blank"
++            rel="noopener noreferrer"
++            aria-label="Visit LinkedIn profile"
++            className="text-slate-500 transition-colors hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400"
++          >
++            <FaLinkedin aria-hidden="true" />
+           </a>
+ 
+-          <a href={`mailto:${profile.email}`}>
+-            <HiOutlineMail />
++          <a
++            href={`mailto:${profile.email}`}
++            aria-label="Send an email"
++            className="text-slate-500 transition-colors hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400"
++          >
++            <HiOutlineMail aria-hidden="true" />
+           </a>
+ 
+-        </div>
++          <a
++            href="#hero"
++            aria-label="Back to top"
++            className="flex items-center gap-1 rounded-full border border-slate-200 px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:border-blue-500 hover:text-blue-600 dark:border-slate-700 dark:text-slate-300 dark:hover:border-blue-500 dark:hover:text-blue-400"
++          >
++            <HiArrowUp aria-hidden="true" />
++            Top
++          </a>
+ 
+-        <p className="text-center text-slate-500">
+-          © {new Date().getFullYear()} Ni Kadek Linda Aryani.
+-          Built with Next.js & Tailwind CSS.
+-        </p>
++        </div>
+ 
+       </div>
+     </footer>
+diff --git a/components/layout/Navbar.tsx b/components/layout/Navbar.tsx
+index d9fc76d..24e9657 100644
+--- a/components/layout/Navbar.tsx
++++ b/components/layout/Navbar.tsx
+@@ -3,6 +3,8 @@
+ import { useState } from "react";
+ import { HiMenu, HiX } from "react-icons/hi";
+ import ThemeToggle from "@/components/ui/ThemeToggle";
++import Button from "@/components/ui/Button";
++import { profile } from "@/data/portfolio";
+ 
+ export default function Navbar() {
+   const [open, setOpen] = useState(false);
+@@ -17,8 +19,8 @@ export default function Navbar() {
+   ];
+ 
+   return (
+-    <nav className="fixed top-0 left-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/80">
+-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
++    <nav className="fixed top-0 left-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/80">
++      <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
+ 
+         {/* Logo */}
+         <a
+@@ -45,9 +47,14 @@ export default function Navbar() {
+         <div className="hidden items-center gap-4 md:flex">
+           <ThemeToggle />
+ 
+-          <button className="rounded-xl bg-blue-600 px-5 py-2 text-white transition hover:bg-blue-700">
++          <Button
++            href={profile.resume}
++            target="_blank"
++            rel="noopener noreferrer"
++            className="px-5 py-2 text-sm"
++          >
+             Download CV
+-          </button>
++          </Button>
+         </div>
+ 
+         {/* Mobile Right */}
+@@ -56,9 +63,11 @@ export default function Navbar() {
+ 
+           <button
+             onClick={() => setOpen(!open)}
++            aria-label={open ? "Close menu" : "Open menu"}
++            aria-expanded={open}
+             className="text-3xl text-slate-800 dark:text-white"
+           >
+-            {open ? <HiX /> : <HiMenu />}
++            {open ? <HiX aria-hidden="true" /> : <HiMenu aria-hidden="true" />}
+           </button>
+         </div>
+       </div>
+@@ -66,7 +75,7 @@ export default function Navbar() {
+       {/* Mobile Menu */}
+ 
+       {open && (
+-        <div className="border-t border-gray-200 bg-white dark:border-slate-800 dark:bg-slate-900 md:hidden">
++        <div className="border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 md:hidden">
+ 
+           {menus.map((menu) => (
+             <a
+@@ -80,9 +89,14 @@ export default function Navbar() {
+           ))}
+ 
+           <div className="p-6">
+-            <button className="w-full rounded-xl bg-blue-600 py-3 text-white transition hover:bg-blue-700">
++            <Button
++              href={profile.resume}
++              target="_blank"
++              rel="noopener noreferrer"
++              className="w-full"
++            >
+               Download CV
+-            </button>
++            </Button>
+           </div>
+ 
+         </div>
+diff --git a/components/sections/About.tsx b/components/sections/About.tsx
+index de1395a..c994f38 100644
+--- a/components/sections/About.tsx
++++ b/components/sections/About.tsx
+@@ -12,8 +12,9 @@ import {
+ import SectionWrapper from "@/components/ui/SectionWrapper";
+ import SectionTitle from "@/components/ui/SectionTitle";
+ import GlassCard from "@/components/ui/GlassCard";
++import AnimatedCounter from "@/components/ui/AnimatedCounter";
+ 
+-import { profile } from "@/data/portfolio";
++import { profile, stats } from "@/data/portfolio";
+ 
+ const highlights = [
+   "Cloud Computing",
+@@ -92,6 +93,19 @@ export default function About() {
+ 
+           </div>
+ 
++          <div className="mt-14 grid grid-cols-2 gap-8 border-t border-slate-200 pt-10 sm:grid-cols-4 dark:border-slate-800">
++            {stats.map((item) => (
++              <div key={item.title}>
++                <p className="text-3xl font-black text-blue-600 dark:text-blue-400">
++                  <AnimatedCounter end={item.number} />
++                </p>
++                <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
++                  {item.title}
++                </p>
++              </div>
++            ))}
++          </div>
++
+         </motion.div>
+ 
+         {/* RIGHT */}
+@@ -139,8 +153,8 @@ export default function About() {
+ 
+           <GlassCard>
+             <div className="flex items-center gap-4">
+-              <div className="rounded-2xl bg-cyan-100 p-3 dark:bg-cyan-500/20">
+-                <HiCode className="text-3xl text-cyan-600 dark:text-cyan-400" />
++              <div className="rounded-2xl bg-blue-100 p-3 dark:bg-blue-500/20">
++                <HiCode className="text-3xl text-blue-600 dark:text-blue-400" />
+               </div>
+ 
+               <div>
+@@ -187,8 +201,8 @@ export default function About() {
+ 
+           <GlassCard>
+             <div className="flex items-center gap-4">
+-              <div className="rounded-2xl bg-purple-100 p-3 dark:bg-purple-500/20">
+-                <HiSparkles className="text-3xl text-purple-600 dark:text-purple-400" />
++              <div className="rounded-2xl bg-blue-100 p-3 dark:bg-blue-500/20">
++                <HiSparkles className="text-3xl text-blue-600 dark:text-blue-400" />
+               </div>
+ 
+               <div>
+diff --git a/components/sections/Achievements.tsx b/components/sections/Achievements.tsx
+index dfcba8f..26a344f 100644
+--- a/components/sections/Achievements.tsx
++++ b/components/sections/Achievements.tsx
+@@ -57,9 +57,6 @@ export default function Achievements() {
+                 duration: .5,
+                 delay: index * .08,
+               }}
+-              whileHover={{
+-                y: -10,
+-              }}
+             >
+ 
+               <GlassCard>
+diff --git a/components/sections/Contact.tsx b/components/sections/Contact.tsx
+index f849ed3..960b5c7 100644
+--- a/components/sections/Contact.tsx
++++ b/components/sections/Contact.tsx
+@@ -51,7 +51,7 @@ export default function Contact() {
+ 
+           <GlassCard>
+ 
+-            <h3 className="text-3xl font-black text-slate-900 dark:text-white">
++            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
+ 
+               Have an idea?
+ 
+@@ -59,7 +59,7 @@ export default function Contact() {
+ 
+             <p className="mt-6 leading-8 text-slate-600 dark:text-slate-300">
+ 
+-              I'm currently open to internships, freelance projects,
++              I&apos;m currently open to internships, freelance projects,
+               collaborations, research, and exciting opportunities.
+ 
+             </p>
+@@ -152,7 +152,7 @@ export default function Contact() {
+ 
+           <GlassCard>
+ 
+-            <h3 className="text-3xl font-black text-slate-900 dark:text-white">
++            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
+ 
+               Connect With Me
+ 
+@@ -165,39 +165,35 @@ export default function Contact() {
+             </p>
+ 
+             <div className="mt-10 flex gap-5">
+-                            <a
++
++              <Button
+                 href={profile.github}
+                 target="_blank"
+                 rel="noopener noreferrer"
++                variant="outline"
+               >
+-                <Button variant="outline">
+-                  <FaGithub className="mr-2" />
+-                  GitHub
+-                </Button>
+-              </a>
++                <FaGithub className="mr-2" aria-hidden="true" />
++                GitHub
++              </Button>
+ 
+-              <a
++              <Button
+                 href={profile.linkedin}
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >
+-                <Button>
+-                  <FaLinkedin className="mr-2" />
+-                  LinkedIn
+-                </Button>
+-              </a>
++                <FaLinkedin className="mr-2" aria-hidden="true" />
++                LinkedIn
++              </Button>
+ 
+             </div>
+ 
+-            <a
++            <Button
+               href={`mailto:${profile.email}`}
+-              className="mt-10 inline-block"
++              className="mt-10 w-full"
+             >
+-              <Button className="w-full">
+-                <HiOutlineMail className="mr-2" />
+-                Send Email
+-              </Button>
+-            </a>
++              <HiOutlineMail className="mr-2" aria-hidden="true" />
++              Send Email
++            </Button>
+ 
+           </GlassCard>
+ 
+diff --git a/components/sections/Experience.tsx b/components/sections/Experience.tsx
+index a0231f6..98f3d1c 100644
+--- a/components/sections/Experience.tsx
++++ b/components/sections/Experience.tsx
+@@ -1,14 +1,29 @@
+ "use client";
+ 
+ import { motion } from "framer-motion";
+-import { HiAcademicCap } from "react-icons/hi";
++import {
++  HiAcademicCap,
++  HiLightBulb,
++  HiSpeakerphone,
++  HiCode,
++} from "react-icons/hi";
+ 
+ import SectionWrapper from "@/components/ui/SectionWrapper";
+ import SectionTitle from "@/components/ui/SectionTitle";
+ import GlassCard from "@/components/ui/GlassCard";
++import Badge from "@/components/ui/Badge";
+ 
+ import { experiences } from "@/data/portfolio";
+ 
++/** Picks a more meaningful icon per entry based on its title, without
++ * requiring a new field in data/portfolio.ts. */
++function iconFor(title: string) {
++  if (/research/i.test(title)) return HiLightBulb;
++  if (/speaking/i.test(title)) return HiSpeakerphone;
++  if (/portfolio|project/i.test(title)) return HiCode;
++  return HiAcademicCap;
++}
++
+ export default function Experience() {
+   return (
+     <SectionWrapper id="experience">
+@@ -21,12 +36,14 @@ export default function Experience() {
+ 
+         {/* Timeline Line */}
+ 
+-        <div className="absolute left-6 top-0 h-full w-[2px] bg-slate-200 dark:bg-slate-700" />
++        <div className="absolute left-5 top-0 h-full w-[2px] bg-slate-200 sm:left-6 dark:bg-slate-700" />
+ 
+         <div className="space-y-12">
+ 
+-          {experiences.map((item, index) => (
++          {experiences.map((item, index) => {
++            const Icon = iconFor(item.title);
+ 
++            return (
+             <motion.div
+               key={item.title}
+               initial={{
+@@ -44,28 +61,25 @@ export default function Experience() {
+                 duration: .5,
+                 delay: index * .08,
+               }}
+-              className="relative flex gap-8"
++              className="relative flex gap-5 sm:gap-8"
+             >
+ 
+               {/* Timeline Dot */}
+ 
+-              <div className="relative z-10 mt-5 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 shadow-lg">
++              <div className="relative z-10 mt-5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-600 shadow-lg sm:h-12 sm:w-12">
+ 
+-                <HiAcademicCap
+-                  className="text-2xl text-white"
++                <Icon
++                  className="text-xl text-white sm:text-2xl"
++                  aria-hidden="true"
+                 />
+ 
+               </div>
+ 
+               {/* Card */}
+ 
+-              <GlassCard>
+-
+-                <span className="inline-block rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-600 dark:bg-blue-500/20 dark:text-blue-400">
++              <GlassCard className="flex-1">
+ 
+-                  {item.year}
+-
+-                </span>
++                <Badge>{item.year}</Badge>
+ 
+                 <h3 className="mt-5 text-2xl font-bold text-slate-900 dark:text-white">
+ 
+@@ -88,8 +102,8 @@ export default function Experience() {
+               </GlassCard>
+ 
+             </motion.div>
+-
+-          ))}
++            );
++          })}
+           </div>
+       </div>
+     </SectionWrapper>
+diff --git a/components/sections/Hero.tsx b/components/sections/Hero.tsx
+index 5f611a2..3bcc14c 100644
+--- a/components/sections/Hero.tsx
++++ b/components/sections/Hero.tsx
+@@ -1,7 +1,6 @@
+ "use client";
+ 
+ import Image from "next/image";
+-import Link from "next/link";
+ 
+ import { motion } from "framer-motion";
+ 
+@@ -16,6 +15,7 @@ import {
+ } from "react-icons/hi";
+ 
+ import Button from "@/components/ui/Button";
++import Badge from "@/components/ui/Badge";
+ import GradientText from "@/components/ui/GradientText";
+ 
+ import {
+@@ -35,9 +35,7 @@ export default function Hero() {
+ 
+         <div className="absolute -left-32 top-20 h-96 w-96 rounded-full bg-blue-500/20 blur-[120px]" />
+ 
+-        <div className="absolute right-0 top-60 h-[420px] w-[420px] rounded-full bg-cyan-400/20 blur-[150px]" />
+-
+-        <div className="absolute bottom-0 left-1/2 h-80 w-80 -translate-x-1/2 rounded-full bg-indigo-400/10 blur-[140px]" />
++        <div className="absolute right-0 top-60 h-[420px] w-[420px] rounded-full bg-blue-400/10 blur-[150px]" />
+ 
+       </div>
+ 
+@@ -62,23 +60,11 @@ export default function Hero() {
+ 
+           {/* Badge */}
+ 
+-          <div className="inline-flex items-center gap-3 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-5 py-2">
+-
+-            <span className="relative flex h-3 w-3">
+-
+-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
+-
+-              <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-500" />
+-
+-            </span>
+-
+-            <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">
+-
++          {profile.available && (
++            <Badge pulse tone="emerald">
+               Available for Internship
+-
+-            </span>
+-
+-          </div>
++            </Badge>
++          )}
+ 
+           {/* Heading */}
+ 
+@@ -102,7 +88,7 @@ export default function Hero() {
+ 
+             <br />
+ 
+-            I'm{" "}
++            I&apos;m{" "}
+ 
+             <GradientText>
+ 
+@@ -184,28 +170,18 @@ export default function Hero() {
+             className="mt-10 flex flex-wrap gap-4"
+           >
+ 
+-            <Link href="#projects">
+-
+-              <Button>
+-
+-                View Projects
++            <Button href="#projects">
++              View Projects
++            </Button>
+ 
+-              </Button>
+-
+-            </Link>
+-
+-            <a
++            <Button
+               href={profile.resume}
+               target="_blank"
++              rel="noopener noreferrer"
++              variant="outline"
+             >
+-
+-              <Button variant="outline">
+-
+-                Download CV
+-
+-              </Button>
+-
+-            </a>
++              Download CV
++            </Button>
+ 
+           </motion.div>
+ 
+@@ -221,25 +197,28 @@ export default function Hero() {
+               href={profile.github}
+               target="_blank"
+               rel="noopener noreferrer"
++              aria-label="Visit GitHub profile"
+               className="rounded-xl border border-slate-200 bg-white p-3 text-2xl text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-blue-500 dark:hover:text-blue-400"
+             >
+-              <FaGithub />
++              <FaGithub aria-hidden="true" />
+             </a>
+ 
+             <a
+               href={profile.linkedin}
+               target="_blank"
+               rel="noopener noreferrer"
++              aria-label="Visit LinkedIn profile"
+               className="rounded-xl border border-slate-200 bg-white p-3 text-2xl text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-blue-500 dark:hover:text-blue-400"
+             >
+-              <FaLinkedin />
++              <FaLinkedin aria-hidden="true" />
+             </a>
+ 
+             <a
+               href={`mailto:${profile.email}`}
++              aria-label="Send an email"
+               className="rounded-xl border border-slate-200 bg-white p-3 text-2xl text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-blue-500 dark:hover:text-blue-400"
+             >
+-              <HiOutlineMail />
++              <HiOutlineMail aria-hidden="true" />
+             </a>
+           </motion.div>
+ 
+@@ -253,9 +232,9 @@ export default function Hero() {
+           >
+             {heroStats.map((item) => (
+               <div key={item.label}>
+-                <h3 className="text-3xl font-black text-blue-600 dark:text-blue-400">
++                <p className="text-3xl font-black text-blue-600 dark:text-blue-400">
+                   {item.value}
+-                </h3>
++                </p>
+ 
+                 <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
+                   {item.label}
+@@ -283,7 +262,7 @@ export default function Hero() {
+         >
+           <div className="absolute h-[520px] w-[520px] rounded-full bg-blue-500/10 blur-3xl" />
+ 
+-          <div className="relative rounded-full bg-gradient-to-br from-blue-500 via-cyan-400 to-indigo-500 p-2 shadow-2xl">
++          <div className="relative rounded-full bg-gradient-to-br from-blue-600 to-blue-400 p-2 shadow-2xl">
+             <div className="rounded-full bg-white p-3 dark:bg-slate-900">
+               <Image
+                 src={profile.image}
+@@ -312,9 +291,9 @@ export default function Hero() {
+               Currently
+             </p>
+ 
+-            <h4 className="font-bold text-slate-900 dark:text-white">
++            <p className="font-bold text-slate-900 dark:text-white">
+               {profile.university}
+-            </h4>
++            </p>
+           </motion.div>
+ 
+           <motion.div
+@@ -331,9 +310,9 @@ export default function Hero() {
+               Location
+             </p>
+ 
+-            <h4 className="font-bold text-slate-900 dark:text-white">
++            <p className="font-bold text-slate-900 dark:text-white">
+               {profile.location}
+-            </h4>
++            </p>
+           </motion.div>
+         </motion.div>
+       </div>
+@@ -342,6 +321,7 @@ export default function Hero() {
+ 
+       <motion.a
+         href="#about"
++        aria-label="Scroll to About section"
+         animate={{
+           y: [0, 10, 0],
+         }}
+@@ -351,7 +331,7 @@ export default function Hero() {
+         }}
+         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-400 transition hover:text-blue-600 dark:text-slate-500 dark:hover:text-blue-400"
+       >
+-        <HiArrowDown size={30} />
++        <HiArrowDown size={30} aria-hidden="true" />
+       </motion.a>
+     </section>
+   );
+diff --git a/components/sections/Projects.tsx b/components/sections/Projects.tsx
+index 555d2ae..1ff33dd 100644
+--- a/components/sections/Projects.tsx
++++ b/components/sections/Projects.tsx
+@@ -3,7 +3,7 @@
+ import Image from "next/image";
+ import { motion } from "framer-motion";
+ import { FaGithub } from "react-icons/fa";
+-import { HiOutlineExternalLink } from "react-icons/hi";
++import { HiOutlineExternalLink, HiOutlineClock } from "react-icons/hi";
+ 
+ import Badge from "@/components/ui/Badge";
+ import Button from "@/components/ui/Button";
+@@ -52,26 +52,32 @@ export default function Projects() {
+ 
+             <motion.div
+               whileHover={{
+-                scale: 1.03,
++                scale: 1.02,
+               }}
+               transition={{
+-                duration: .3,
++                duration: .4,
++                ease: "easeOut",
+               }}
++              className="group/card relative"
+             >
+ 
+-              <GlassCard>
++              {/* Animated glow border — fades in on hover */}
++              <div className="absolute -inset-px rounded-[calc(1.5rem+1px)] bg-gradient-to-r from-blue-600 via-blue-400 to-blue-600 bg-[length:200%_100%] opacity-0 blur transition-opacity duration-500 group-hover/card:opacity-70 group-hover/card:animate-[gradient-move_3s_linear_infinite]" />
++
++              <GlassCard className="relative">
+ 
+                 <div className="group relative overflow-hidden rounded-2xl">
+ 
+                   <Image
+                     src={project.image}
+-                    alt={project.title}
++                    alt={`${project.title} project screenshot`}
+                     width={900}
+                     height={600}
+-                    className="h-[320px] w-full object-cover transition duration-700 group-hover:scale-110"
++                    sizes="(min-width: 1024px) 50vw, 100vw"
++                    className="h-[320px] w-full object-cover transition duration-500 ease-out group-hover:scale-105"
+                   />
+ 
+-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
++                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
+ 
+                 </div>
+ 
+@@ -130,28 +136,39 @@ export default function Projects() {
+ 
+               </div>
+ 
+-              <div className="mt-10 flex flex-wrap gap-4">
+-                                <a
+-                  href={project.github}
+-                  target="_blank"
+-                  rel="noopener noreferrer"
+-                >
+-                  <Button variant="outline">
+-                    <FaGithub className="mr-2" />
+-                    GitHub
+-                  </Button>
+-                </a>
++              <div className="mt-10 flex flex-wrap items-center gap-4">
+ 
+-                <a
+-                  href={project.demo}
++                <Button
++                  href={project.github}
+                   target="_blank"
+                   rel="noopener noreferrer"
++                  variant="outline"
++                  className="min-w-[140px]"
+                 >
+-                  <Button>
+-                    <HiOutlineExternalLink className="mr-2" />
++                  <FaGithub className="mr-2" aria-hidden="true" />
++                  GitHub
++                </Button>
++
++                {project.demo && project.demo !== "#" ? (
++                  <Button
++                    href={project.demo}
++                    target="_blank"
++                    rel="noopener noreferrer"
++                    className="min-w-[140px]"
++                  >
++                    <HiOutlineExternalLink className="mr-2" aria-hidden="true" />
+                     Live Demo
+                   </Button>
+-                </a>
++                ) : (
++                  <Button
++                    disabled
++                    title="Live demo is not deployed yet"
++                    className="min-w-[140px]"
++                  >
++                    <HiOutlineClock className="mr-2" aria-hidden="true" />
++                    Coming Soon
++                  </Button>
++                )}
+ 
+               </div>
+ 
+diff --git a/components/sections/Skills.tsx b/components/sections/Skills.tsx
+index 0456ea3..449ef33 100644
+--- a/components/sections/Skills.tsx
++++ b/components/sections/Skills.tsx
+@@ -2,71 +2,11 @@
+ 
+ import { motion } from "framer-motion";
+ 
+-import {
+-  SiHtml5,
+-  SiCss,
+-  SiJavascript,
+-  SiTypescript,
+-  SiReact,
+-  SiNextdotjs,
+-  SiTailwindcss,
+-  SiPhp,
+-  SiMysql,
+-  SiGooglecloud,
+-  SiFirebase,
+-  SiGit,
+-  SiGithub,
+-  SiPostman,
+-  SiFigma,
+-} from "react-icons/si";
+-
+-import { FaAws } from "react-icons/fa";
+-
+ import SectionWrapper from "@/components/ui/SectionWrapper";
+ import SectionTitle from "@/components/ui/SectionTitle";
+ import GlassCard from "@/components/ui/GlassCard";
+ 
+-const categories = [
+-  {
+-    title: "Frontend",
+-    items: [
+-      { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
+-      { name: "CSS3", icon: SiCss, color: "#1572B6" },
+-      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+-      { name: "React", icon: SiReact, color: "#61DAFB" },
+-      { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
+-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+-    ],
+-  },
+-
+-  {
+-    title: "Backend",
+-    items: [
+-      { name: "PHP", icon: SiPhp, color: "#777BB4" },
+-      { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+-    ],
+-  },
+-
+-  {
+-    title: "Cloud",
+-    items: [
+-      { name: "Google Cloud", icon: SiGooglecloud, color: "#4285F4" },
+-      { name: "AWS", icon: FaAws, color: "#FF9900" },
+-      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+-    ],
+-  },
+-
+-  {
+-    title: "Tools",
+-    items: [
+-      { name: "Git", icon: SiGit, color: "#F05032" },
+-      { name: "GitHub", icon: SiGithub, color: "#181717" },
+-      { name: "Postman", icon: SiPostman, color: "#FF6C37" },
+-      { name: "Figma", icon: SiFigma, color: "#F24E1E" },
+-    ],
+-  },
+-];
++import { skillCategories } from "@/data/portfolio";
+ 
+ export default function Skills() {
+   return (
+@@ -78,7 +18,7 @@ export default function Skills() {
+       />
+ 
+       <div className="mt-16 space-y-14">
+-        {categories.map((category, categoryIndex) => (
++        {skillCategories.map((category, categoryIndex) => (
+           <motion.div
+             key={category.title}
+             initial={{ opacity: 0, y: 30 }}
+@@ -108,10 +48,12 @@ export default function Skills() {
+                       delay: index * 0.05,
+                     }}
+                   >
+-                    <GlassCard className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center transition hover:-translate-y-2">
++                    <GlassCard className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center">
+                       <Icon
+                         size={42}
+                         color={item.color}
++                        className={item.invertOnDark ? "dark:invert" : undefined}
++                        aria-hidden="true"
+                       />
+ 
+                       <p className="font-semibold text-slate-700 dark:text-slate-200">
+diff --git a/components/ui/Badge.tsx b/components/ui/Badge.tsx
+index c3a56cf..1c684ac 100644
+--- a/components/ui/Badge.tsx
++++ b/components/ui/Badge.tsx
+@@ -1,19 +1,27 @@
+ type Props = {
+-    children: React.ReactNode;
++  children: React.ReactNode;
++  /** Show a small pulsing status dot before the label, e.g. for availability. */
++  pulse?: boolean;
++  tone?: "blue" | "emerald";
+ };
+ 
+-export default function Badge({
+-    children
+-}:Props){
+-
+-    return(
+-
+-        <span className="inline-flex items-center rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm font-semibold text-blue-500 backdrop-blur">
+-
+-            {children}
++const toneClasses = {
++  blue: "border-blue-500/20 bg-blue-500/10 text-blue-500",
++  emerald: "border-emerald-500/20 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400",
++};
+ 
++export default function Badge({ children, pulse = false, tone = "blue" }: Props) {
++  return (
++    <span
++      className={`inline-flex items-center gap-3 rounded-full border px-4 py-2 text-sm font-semibold backdrop-blur ${toneClasses[tone]}`}
++    >
++      {pulse && (
++        <span className="relative flex h-2.5 w-2.5">
++          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
++          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
+         </span>
+-
+-    );
+-
++      )}
++      {children}
++    </span>
++  );
+ }
+\ No newline at end of file
+diff --git a/components/ui/Button.tsx b/components/ui/Button.tsx
+index d7200a5..b1abf08 100644
+--- a/components/ui/Button.tsx
++++ b/components/ui/Button.tsx
+@@ -1,35 +1,69 @@
+ "use client";
+ 
+-import { ButtonHTMLAttributes } from "react";
++import { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react";
+ import clsx from "clsx";
+ 
+-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+-  variant?: "primary" | "secondary" | "outline";
++type Variant = "primary" | "secondary" | "outline";
++
++type CommonProps = {
++  variant?: Variant;
++  className?: string;
+ };
+ 
++type ButtonAsButton = CommonProps &
++  ButtonHTMLAttributes<HTMLButtonElement> & {
++    href?: undefined;
++  };
++
++type ButtonAsAnchor = CommonProps &
++  AnchorHTMLAttributes<HTMLAnchorElement> & {
++    href: string;
++  };
++
++type ButtonProps = ButtonAsButton | ButtonAsAnchor;
++
++function buttonClasses(variant: Variant, className?: string) {
++  return clsx(
++    "inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold transition-all duration-300 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none",
++
++    variant === "primary" &&
++      "bg-blue-600 text-white hover:bg-blue-700 hover:scale-105 shadow-lg shadow-blue-500/20",
++
++    variant === "secondary" &&
++      "bg-slate-800 text-white hover:bg-slate-700",
++
++    variant === "outline" &&
++      "border border-slate-300 bg-white text-slate-800 hover:border-blue-600 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900 dark:text-white",
++
++    className
++  );
++}
++
++/** Renders a real <a> when `href` is passed, otherwise a real <button>.
++ * Keeps the same look either way, without ever nesting one inside the other. */
+ export default function Button({
+   children,
+   variant = "primary",
+   className,
+   ...props
+ }: ButtonProps) {
++  if ("href" in props && props.href !== undefined) {
++    const { href, ...anchorProps } = props as ButtonAsAnchor;
++    return (
++      <a
++        href={href}
++        {...anchorProps}
++        className={buttonClasses(variant, className)}
++      >
++        {children}
++      </a>
++    );
++  }
++
+   return (
+     <button
+-      {...props}
+-      className={clsx(
+-        "inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold transition-all duration-300",
+-
+-        variant === "primary" &&
+-          "bg-blue-600 text-white hover:bg-blue-700 hover:scale-105 shadow-lg shadow-blue-500/20",
+-
+-        variant === "secondary" &&
+-          "bg-slate-800 text-white hover:bg-slate-700",
+-
+-        variant === "outline" &&
+-          "border border-slate-300 bg-white text-slate-800 hover:border-blue-600 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900 dark:text-white",
+-
+-        className
+-      )}
++      {...(props as ButtonAsButton)}
++      className={buttonClasses(variant, className)}
+     >
+       {children}
+     </button>
+diff --git a/components/ui/Card.tsx b/components/ui/Card.tsx
+deleted file mode 100644
+index e13b2eb..0000000
+--- a/components/ui/Card.tsx
++++ /dev/null
+@@ -1,23 +0,0 @@
+-import { ReactNode } from "react";
+-import clsx from "clsx";
+-
+-type Props = {
+-  children: ReactNode;
+-  className?: string;
+-};
+-
+-export default function Card({
+-  children,
+-  className,
+-}: Props) {
+-  return (
+-    <div
+-      className={clsx(
+-        "rounded-3xl border border-slate-200 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-900",
+-        className
+-      )}
+-    >
+-      {children}
+-    </div>
+-  );
+-}
+\ No newline at end of file
+diff --git a/components/ui/FloatingBlob.tsx b/components/ui/FloatingBlob.tsx
+deleted file mode 100644
+index d381c8d..0000000
+--- a/components/ui/FloatingBlob.tsx
++++ /dev/null
+@@ -1,35 +0,0 @@
+-"use client";
+-
+-import { motion } from "framer-motion";
+-
+-export default function FloatingBlob() {
+-  return (
+-    <>
+-      <motion.div
+-        animate={{
+-          x: [0, 60, 0],
+-          y: [0, -60, 0],
+-          scale: [1, 1.2, 1],
+-        }}
+-        transition={{
+-          duration: 12,
+-          repeat: Infinity,
+-        }}
+-        className="absolute -left-24 top-24 h-[500px] w-[500px] rounded-full bg-blue-500/20 blur-[140px]"
+-      />
+-
+-      <motion.div
+-        animate={{
+-          x: [0, -80, 0],
+-          y: [0, 70, 0],
+-          scale: [1, .9, 1],
+-        }}
+-        transition={{
+-          duration: 15,
+-          repeat: Infinity,
+-        }}
+-        className="absolute -right-32 bottom-0 h-[500px] w-[500px] rounded-full bg-cyan-500/20 blur-[140px]"
+-      />
+-    </>
+-  );
+-}
+\ No newline at end of file
+diff --git a/components/ui/GlassCard.tsx b/components/ui/GlassCard.tsx
+index 6e1bcfc..699d985 100644
+--- a/components/ui/GlassCard.tsx
++++ b/components/ui/GlassCard.tsx
+@@ -21,6 +21,10 @@ export default function GlassCard({
+         p-8
+         shadow-2xl
+         backdrop-blur-xl
++        transition-all
++        duration-300
++        hover:-translate-y-1
++        hover:shadow-blue-500/10
+         dark:border-slate-700
+         dark:bg-slate-900/60
+         ${className}
+diff --git a/components/ui/SpotlightCard.tsx b/components/ui/SpotlightCard.tsx
+deleted file mode 100644
+index 5f486b6..0000000
+--- a/components/ui/SpotlightCard.tsx
++++ /dev/null
+@@ -1,57 +0,0 @@
+-"use client";
+-
+-import { ReactNode } from "react";
+-
+-type Props = {
+-  children: ReactNode;
+-};
+-
+-export default function SpotlightCard({
+-  children,
+-}: Props) {
+-  return (
+-    <div
+-      className="
+-      group
+-      relative
+-      overflow-hidden
+-      rounded-3xl
+-      border
+-      border-slate-200
+-      bg-white
+-      p-8
+-      transition-all
+-      duration-500
+-
+-      hover:-translate-y-2
+-      hover:shadow-2xl
+-
+-      dark:border-slate-800
+-      dark:bg-slate-900
+-      "
+-    >
+-      <div
+-        className="
+-        absolute
+-        inset-0
+-        opacity-0
+-        transition
+-        duration-500
+-
+-        group-hover:opacity-100
+-
+-        bg-gradient-to-br
+-        from-blue-500/5
+-        to-cyan-500/5
+-        "
+-      />
+-
+-      <div className="relative">
+-
+-        {children}
+-
+-      </div>
+-
+-    </div>
+-  );
+-}
+\ No newline at end of file
+diff --git a/components/ui/ThemeToggle.tsx b/components/ui/ThemeToggle.tsx
+index 7a0506b..78a17b7 100644
+--- a/components/ui/ThemeToggle.tsx
++++ b/components/ui/ThemeToggle.tsx
+@@ -1,17 +1,25 @@
+ "use client";
+ 
+ import { useTheme } from "next-themes";
+-import { useEffect, useState } from "react";
++import { useSyncExternalStore } from "react";
+ import { HiMoon, HiSun } from "react-icons/hi";
+ 
++const emptySubscribe = () => () => {};
++
++/** True once hydrated on the client, false during SSR — avoids a theme
++ * flash without triggering a synchronous setState-in-effect render. */
++function useHasMounted() {
++  return useSyncExternalStore(
++    emptySubscribe,
++    () => true,
++    () => false
++  );
++}
++
+ export default function ThemeToggle() {
+   const { resolvedTheme, setTheme } = useTheme();
+ 
+-  const [mounted, setMounted] = useState(false);
+-
+-  useEffect(() => {
+-    setMounted(true);
+-  }, []);
++  const mounted = useHasMounted();
+ 
+   if (!mounted) return null;
+ 
+diff --git a/components/ui/TypingText.tsx b/components/ui/TypingText.tsx
+deleted file mode 100644
+index 9513fdb..0000000
+--- a/components/ui/TypingText.tsx
++++ /dev/null
+@@ -1,24 +0,0 @@
+-"use client";
+-
+-import { TypeAnimation } from "react-type-animation";
+-
+-export default function TypingText() {
+-  return (
+-    <TypeAnimation
+-      sequence={[
+-        "Information Systems Student",
+-        1800,
+-        "Cloud Computing Enthusiast",
+-        1800,
+-        "Web Developer",
+-        1800,
+-        "Cybersecurity Learner",
+-        1800,
+-      ]}
+-      wrapper="span"
+-      speed={40}
+-      repeat={Infinity}
+-      className="text-2xl font-bold text-blue-600 dark:text-blue-400"
+-    />
+-  );
+-}
+\ No newline at end of file
+diff --git a/data/portfolio.ts b/data/portfolio.ts
+index e000e0f..a95de3e 100644
+--- a/data/portfolio.ts
++++ b/data/portfolio.ts
+@@ -1,3 +1,23 @@
++import { IconType } from "react-icons";
++import {
++  SiHtml5,
++  SiCss,
++  SiJavascript,
++  SiTypescript,
++  SiReact,
++  SiNextdotjs,
++  SiTailwindcss,
++  SiPhp,
++  SiMysql,
++  SiGooglecloud,
++  SiFirebase,
++  SiGit,
++  SiGithub,
++  SiPostman,
++  SiFigma,
++} from "react-icons/si";
++import { FaAws } from "react-icons/fa";
++
+ // ===============================
+ // PROFILE
+ // ===============================
+@@ -105,36 +125,65 @@ export const experiences = [
+ // SKILLS
+ // ===============================
+ 
+-export const skills = {
+-  frontend: [
+-    "HTML",
+-    "CSS",
+-    "JavaScript",
+-    "TypeScript",
+-    "React",
+-    "Next.js",
+-    "Tailwind CSS",
+-  ],
+-
+-  backend: [
+-    "PHP",
+-    "MySQL",
+-  ],
+-
+-  cloud: [
+-    "Google Cloud",
+-    "AWS",
+-    "Firebase",
+-  ],
+-
+-  tools: [
+-    "Git",
+-    "GitHub",
+-    "VS Code",
+-    "Figma",
+-    "Postman",
+-  ],
++// ===============================
++// SKILLS
++// ===============================
++
++export type SkillItem = {
++  name: string;
++  icon: IconType;
++  color: string;
++  /** Set for icons whose brand color is near-black, so they stay
++   * visible against dark-mode card backgrounds. */
++  invertOnDark?: boolean;
+ };
++
++export type SkillCategory = {
++  title: string;
++  items: SkillItem[];
++};
++
++export const skillCategories: SkillCategory[] = [
++  {
++    title: "Frontend",
++    items: [
++      { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
++      { name: "CSS3", icon: SiCss, color: "#1572B6" },
++      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
++      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
++      { name: "React", icon: SiReact, color: "#61DAFB" },
++      { name: "Next.js", icon: SiNextdotjs, color: "#000000", invertOnDark: true },
++      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
++    ],
++  },
++
++  {
++    title: "Backend",
++    items: [
++      { name: "PHP", icon: SiPhp, color: "#777BB4" },
++      { name: "MySQL", icon: SiMysql, color: "#4479A1" },
++    ],
++  },
++
++  {
++    title: "Cloud",
++    items: [
++      { name: "Google Cloud", icon: SiGooglecloud, color: "#4285F4" },
++      { name: "AWS", icon: FaAws, color: "#FF9900" },
++      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
++    ],
++  },
++
++  {
++    title: "Tools",
++    items: [
++      { name: "Git", icon: SiGit, color: "#F05032" },
++      { name: "GitHub", icon: SiGithub, color: "#181717", invertOnDark: true },
++      { name: "Postman", icon: SiPostman, color: "#FF6C37" },
++      { name: "Figma", icon: SiFigma, color: "#F24E1E" },
++    ],
++  },
++];
+ // ===============================
+ // PROJECTS
+ // ===============================
+@@ -289,11 +338,4 @@ export type Project = {
+ export type Achievement = {
+   title: string;
+   description: string;
+-};
+-
+-export type SkillCategory = {
+-  frontend: string[];
+-  backend: string[];
+-  cloud: string[];
+-  tools: string[];
+ };
+\ No newline at end of file
+diff --git a/package-lock.json b/package-lock.json
+index 8aeb4f9..811a678 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -16,8 +16,7 @@
+         "react": "19.2.4",
+         "react-countup": "^6.5.3",
+         "react-dom": "19.2.4",
+-        "react-icons": "^5.7.0",
+-        "react-type-animation": "^3.2.0"
++        "react-icons": "^5.7.0"
+       },
+       "devDependencies": {
+         "@tailwindcss/postcss": "^4",
+@@ -619,9 +618,6 @@
+       "cpu": [
+         "arm"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "LGPL-3.0-or-later",
+       "optional": true,
+       "os": [
+@@ -638,9 +634,6 @@
+       "cpu": [
+         "arm64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "LGPL-3.0-or-later",
+       "optional": true,
+       "os": [
+@@ -657,9 +650,6 @@
+       "cpu": [
+         "ppc64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "LGPL-3.0-or-later",
+       "optional": true,
+       "os": [
+@@ -676,9 +666,6 @@
+       "cpu": [
+         "riscv64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "LGPL-3.0-or-later",
+       "optional": true,
+       "os": [
+@@ -695,9 +682,6 @@
+       "cpu": [
+         "s390x"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "LGPL-3.0-or-later",
+       "optional": true,
+       "os": [
+@@ -714,9 +698,6 @@
+       "cpu": [
+         "x64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "LGPL-3.0-or-later",
+       "optional": true,
+       "os": [
+@@ -733,9 +714,6 @@
+       "cpu": [
+         "arm64"
+       ],
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "LGPL-3.0-or-later",
+       "optional": true,
+       "os": [
+@@ -752,9 +730,6 @@
+       "cpu": [
+         "x64"
+       ],
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "LGPL-3.0-or-later",
+       "optional": true,
+       "os": [
+@@ -771,9 +746,6 @@
+       "cpu": [
+         "arm"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "Apache-2.0",
+       "optional": true,
+       "os": [
+@@ -796,9 +768,6 @@
+       "cpu": [
+         "arm64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "Apache-2.0",
+       "optional": true,
+       "os": [
+@@ -821,9 +790,6 @@
+       "cpu": [
+         "ppc64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "Apache-2.0",
+       "optional": true,
+       "os": [
+@@ -846,9 +812,6 @@
+       "cpu": [
+         "riscv64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "Apache-2.0",
+       "optional": true,
+       "os": [
+@@ -871,9 +834,6 @@
+       "cpu": [
+         "s390x"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "Apache-2.0",
+       "optional": true,
+       "os": [
+@@ -896,9 +856,6 @@
+       "cpu": [
+         "x64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "Apache-2.0",
+       "optional": true,
+       "os": [
+@@ -921,9 +878,6 @@
+       "cpu": [
+         "arm64"
+       ],
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "Apache-2.0",
+       "optional": true,
+       "os": [
+@@ -946,9 +900,6 @@
+       "cpu": [
+         "x64"
+       ],
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "Apache-2.0",
+       "optional": true,
+       "os": [
+@@ -1164,9 +1115,6 @@
+       "cpu": [
+         "arm64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -1183,9 +1131,6 @@
+       "cpu": [
+         "arm64"
+       ],
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -1202,9 +1147,6 @@
+       "cpu": [
+         "x64"
+       ],
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -1221,9 +1163,6 @@
+       "cpu": [
+         "x64"
+       ],
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -1462,9 +1401,6 @@
+         "arm64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -1482,9 +1418,6 @@
+         "arm64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -1502,9 +1435,6 @@
+         "x64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -1522,9 +1452,6 @@
+         "x64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -2075,9 +2002,6 @@
+         "arm64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -2092,9 +2016,6 @@
+         "arm64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -2109,9 +2030,6 @@
+         "loong64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -2126,9 +2044,6 @@
+         "loong64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -2143,9 +2058,6 @@
+         "ppc64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -2160,9 +2072,6 @@
+         "riscv64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -2177,9 +2086,6 @@
+         "riscv64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -2194,9 +2100,6 @@
+         "s390x"
+       ],
+       "dev": true,
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -2211,9 +2114,6 @@
+         "x64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -2228,9 +2128,6 @@
+         "x64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MIT",
+       "optional": true,
+       "os": [
+@@ -4681,6 +4578,7 @@
+       "version": "4.0.0",
+       "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz",
+       "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==",
++      "dev": true,
+       "license": "MIT"
+     },
+     "node_modules/js-yaml": {
+@@ -4956,9 +4854,6 @@
+         "arm64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MPL-2.0",
+       "optional": true,
+       "os": [
+@@ -4980,9 +4875,6 @@
+         "arm64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MPL-2.0",
+       "optional": true,
+       "os": [
+@@ -5004,9 +4896,6 @@
+         "x64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "glibc"
+-      ],
+       "license": "MPL-2.0",
+       "optional": true,
+       "os": [
+@@ -5028,9 +4917,6 @@
+         "x64"
+       ],
+       "dev": true,
+-      "libc": [
+-        "musl"
+-      ],
+       "license": "MPL-2.0",
+       "optional": true,
+       "os": [
+@@ -5113,6 +4999,7 @@
+       "version": "1.4.0",
+       "resolved": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz",
+       "integrity": "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==",
++      "dev": true,
+       "license": "MIT",
+       "dependencies": {
+         "js-tokens": "^3.0.0 || ^4.0.0"
+@@ -5394,6 +5281,7 @@
+       "version": "4.1.1",
+       "resolved": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
+       "integrity": "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==",
++      "dev": true,
+       "license": "MIT",
+       "engines": {
+         "node": ">=0.10.0"
+@@ -5693,6 +5581,7 @@
+       "version": "15.8.1",
+       "resolved": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
+       "integrity": "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==",
++      "dev": true,
+       "license": "MIT",
+       "dependencies": {
+         "loose-envify": "^1.4.0",
+@@ -5777,19 +5666,9 @@
+       "version": "16.13.1",
+       "resolved": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz",
+       "integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==",
++      "dev": true,
+       "license": "MIT"
+     },
+-    "node_modules/react-type-animation": {
+-      "version": "3.2.0",
+-      "resolved": "https://registry.npmjs.org/react-type-animation/-/react-type-animation-3.2.0.tgz",
+-      "integrity": "sha512-WXTe0i3rRNKjmggPvT5ntye1QBt0ATGbijeW6V3cQe2W0jaMABXXlPPEdtofnS9tM7wSRHchEvI9SUw+0kUohw==",
+-      "license": "MIT",
+-      "peerDependencies": {
+-        "prop-types": "^15.5.4",
+-        "react": ">= 15.0.0",
+-        "react-dom": ">= 15.0.0"
+-      }
+-    },
+     "node_modules/reflect.getprototypeof": {
+       "version": "1.0.10",
+       "resolved": "https://registry.npmjs.org/reflect.getprototypeof/-/reflect.getprototypeof-1.0.10.tgz",
+diff --git a/package.json b/package.json
+index 28f4611..835d144 100644
+--- a/package.json
++++ b/package.json
+@@ -17,8 +17,7 @@
+     "react": "19.2.4",
+     "react-countup": "^6.5.3",
+     "react-dom": "19.2.4",
+-    "react-icons": "^5.7.0",
+-    "react-type-animation": "^3.2.0"
++    "react-icons": "^5.7.0"
+   },
+   "devDependencies": {
+     "@tailwindcss/postcss": "^4",
+diff --git a/public/file.svg b/public/file.svg
+deleted file mode 100644
+index 004145c..0000000
+--- a/public/file.svg
++++ /dev/null
+@@ -1 +0,0 @@
+-<svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 13.5V5.41a1 1 0 0 0-.3-.7L9.8.29A1 1 0 0 0 9.08 0H1.5v13.5A2.5 2.5 0 0 0 4 16h8a2.5 2.5 0 0 0 2.5-2.5m-1.5 0v-7H8v-5H3v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1M9.5 5V2.12L12.38 5zM5.13 5h-.62v1.25h2.12V5zm-.62 3h7.12v1.25H4.5zm.62 3h-.62v1.25h7.12V11z" clip-rule="evenodd" fill="#666" fill-rule="evenodd"/></svg>
+\ No newline at end of file
+diff --git a/public/globe.svg b/public/globe.svg
+deleted file mode 100644
+index 567f17b..0000000
+--- a/public/globe.svg
++++ /dev/null
+@@ -1 +0,0 @@
+-<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.27 14.1a6.5 6.5 0 0 0 3.67-3.45q-1.24.21-2.7.34-.31 1.83-.97 3.1M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.48-1.52a7 7 0 0 1-.96 0H7.5a4 4 0 0 1-.84-1.32q-.38-.89-.63-2.08a40 40 0 0 0 3.92 0q-.25 1.2-.63 2.08a4 4 0 0 1-.84 1.31zm2.94-4.76q1.66-.15 2.95-.43a7 7 0 0 0 0-2.58q-1.3-.27-2.95-.43a18 18 0 0 1 0 3.44m-1.27-3.54a17 17 0 0 1 0 3.64 39 39 0 0 1-4.3 0 17 17 0 0 1 0-3.64 39 39 0 0 1 4.3 0m1.1-1.17q1.45.13 2.69.34a6.5 6.5 0 0 0-3.67-3.44q.65 1.26.98 3.1M8.48 1.5l.01.02q.41.37.84 1.31.38.89.63 2.08a40 40 0 0 0-3.92 0q.25-1.2.63-2.08a4 4 0 0 1 .85-1.32 7 7 0 0 1 .96 0m-2.75.4a6.5 6.5 0 0 0-3.67 3.44 29 29 0 0 1 2.7-.34q.31-1.83.97-3.1M4.58 6.28q-1.66.16-2.95.43a7 7 0 0 0 0 2.58q1.3.27 2.95.43a18 18 0 0 1 0-3.44m.17 4.71q-1.45-.12-2.69-.34a6.5 6.5 0 0 0 3.67 3.44q-.65-1.27-.98-3.1" fill="#666"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+\ No newline at end of file
+diff --git a/public/next.svg b/public/next.svg
+deleted file mode 100644
+index 5174b28..0000000
+--- a/public/next.svg
++++ /dev/null
+@@ -1 +0,0 @@
+-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 394 80"><path fill="#000" d="M262 0h68.5v12.7h-27.2v66.6h-13.6V12.7H262V0ZM149 0v12.7H94v20.4h44.3v12.6H94v21h55v12.6H80.5V0h68.7zm34.3 0h-17.8l63.8 79.4h17.9l-32-39.7 32-39.6h-17.9l-23 28.6-23-28.6zm18.3 56.7-9-11-27.1 33.7h17.8l18.3-22.7z"/><path fill="#000" d="M81 79.3 17 0H0v79.3h13.6V17l50.2 62.3H81Zm252.6-.4c-1 0-1.8-.4-2.5-1s-1.1-1.6-1.1-2.6.3-1.8 1-2.5 1.6-1 2.6-1 1.8.3 2.5 1a3.4 3.4 0 0 1 .6 4.3 3.7 3.7 0 0 1-3 1.8zm23.2-33.5h6v23.3c0 2.1-.4 4-1.3 5.5a9.1 9.1 0 0 1-3.8 3.5c-1.6.8-3.5 1.3-5.7 1.3-2 0-3.7-.4-5.3-1s-2.8-1.8-3.7-3.2c-.9-1.3-1.4-3-1.4-5h6c.1.8.3 1.6.7 2.2s1 1.2 1.6 1.5c.7.4 1.5.5 2.4.5 1 0 1.8-.2 2.4-.6a4 4 0 0 0 1.6-1.8c.3-.8.5-1.8.5-3V45.5zm30.9 9.1a4.4 4.4 0 0 0-2-3.3 7.5 7.5 0 0 0-4.3-1.1c-1.3 0-2.4.2-3.3.5-.9.4-1.6 1-2 1.6a3.5 3.5 0 0 0-.3 4c.3.5.7.9 1.3 1.2l1.8 1 2 .5 3.2.8c1.3.3 2.5.7 3.7 1.2a13 13 0 0 1 3.2 1.8 8.1 8.1 0 0 1 3 6.5c0 2-.5 3.7-1.5 5.1a10 10 0 0 1-4.4 3.5c-1.8.8-4.1 1.2-6.8 1.2-2.6 0-4.9-.4-6.8-1.2-2-.8-3.4-2-4.5-3.5a10 10 0 0 1-1.7-5.6h6a5 5 0 0 0 3.5 4.6c1 .4 2.2.6 3.4.6 1.3 0 2.5-.2 3.5-.6 1-.4 1.8-1 2.4-1.7a4 4 0 0 0 .8-2.4c0-.9-.2-1.6-.7-2.2a11 11 0 0 0-2.1-1.4l-3.2-1-3.8-1c-2.8-.7-5-1.7-6.6-3.2a7.2 7.2 0 0 1-2.4-5.7 8 8 0 0 1 1.7-5 10 10 0 0 1 4.3-3.5c2-.8 4-1.2 6.4-1.2 2.3 0 4.4.4 6.2 1.2 1.8.8 3.2 2 4.3 3.4 1 1.4 1.5 3 1.5 5h-5.8z"/></svg>
+\ No newline at end of file
+diff --git a/public/vercel.svg b/public/vercel.svg
+deleted file mode 100644
+index 7705396..0000000
+--- a/public/vercel.svg
++++ /dev/null
+@@ -1 +0,0 @@
+-<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1155 1000"><path d="m577.3 0 577.4 1000H0z" fill="#fff"/></svg>
+\ No newline at end of file
+diff --git a/public/window.svg b/public/window.svg
+deleted file mode 100644
+index b2b2a44..0000000
+--- a/public/window.svg
++++ /dev/null
+@@ -1 +0,0 @@
+-<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 2.5h13v10a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1zM0 1h16v11.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 12.5zm3.75 4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5M7 4.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m1.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5" fill="#666"/></svg>
+\ No newline at end of file

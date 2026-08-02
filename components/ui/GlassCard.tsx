@@ -21,6 +21,10 @@ export default function GlassCard({
         p-8
         shadow-2xl
         backdrop-blur-xl
+        transition-all
+        duration-300
+        hover:-translate-y-1
+        hover:shadow-blue-500/10
         dark:border-slate-700
         dark:bg-slate-900/60
         ${className}

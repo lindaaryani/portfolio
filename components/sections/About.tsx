@@ -12,8 +12,9 @@ import {
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import SectionTitle from "@/components/ui/SectionTitle";
 import GlassCard from "@/components/ui/GlassCard";
+import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
-import { profile } from "@/data/portfolio";
+import { profile, stats } from "@/data/portfolio";
 
 const highlights = [
   "Cloud Computing",
@@ -92,6 +93,19 @@ export default function About() {
 
           </div>
 
+          <div className="mt-14 grid grid-cols-2 gap-8 border-t border-slate-200 pt-10 sm:grid-cols-4 dark:border-slate-800">
+            {stats.map((item) => (
+              <div key={item.title}>
+                <p className="text-3xl font-black text-blue-600 dark:text-blue-400">
+                  <AnimatedCounter end={item.number} />
+                </p>
+                <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+                  {item.title}
+                </p>
+              </div>
+            ))}
+          </div>
+
         </motion.div>
 
         {/* RIGHT */}
@@ -139,8 +153,8 @@ export default function About() {
 
           <GlassCard>
             <div className="flex items-center gap-4">
-              <div className="rounded-2xl bg-cyan-100 p-3 dark:bg-cyan-500/20">
-                <HiCode className="text-3xl text-cyan-600 dark:text-cyan-400" />
+              <div className="rounded-2xl bg-blue-100 p-3 dark:bg-blue-500/20">
+                <HiCode className="text-3xl text-blue-600 dark:text-blue-400" />
               </div>
 
               <div>
@@ -187,8 +201,8 @@ export default function About() {
 
           <GlassCard>
             <div className="flex items-center gap-4">
-              <div className="rounded-2xl bg-purple-100 p-3 dark:bg-purple-500/20">
-                <HiSparkles className="text-3xl text-purple-600 dark:text-purple-400" />
+              <div className="rounded-2xl bg-blue-100 p-3 dark:bg-blue-500/20">
+                <HiSparkles className="text-3xl text-blue-600 dark:text-blue-400" />
               </div>
 
               <div>

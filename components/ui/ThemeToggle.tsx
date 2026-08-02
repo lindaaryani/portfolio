@@ -1,17 +1,25 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { HiMoon, HiSun } from "react-icons/hi";
+
+const emptySubscribe = () => () => {};
+
+/** True once hydrated on the client, false during SSR — avoids a theme
+ * flash without triggering a synchronous setState-in-effect render. */
+function useHasMounted() {
+  return useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false
+  );
+}
 
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
 
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const mounted = useHasMounted();
 
   if (!mounted) return null;
 

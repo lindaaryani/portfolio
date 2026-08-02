@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import ThemeToggle from "@/components/ui/ThemeToggle";
+import Button from "@/components/ui/Button";
+import { profile } from "@/data/portfolio";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -17,8 +19,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/80">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+    <nav className="fixed top-0 left-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/80">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-5">
 
         {/* Logo */}
         <a
@@ -45,9 +47,14 @@ export default function Navbar() {
         <div className="hidden items-center gap-4 md:flex">
           <ThemeToggle />
 
-          <button className="rounded-xl bg-blue-600 px-5 py-2 text-white transition hover:bg-blue-700">
+          <Button
+            href={profile.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 text-sm"
+          >
             Download CV
-          </button>
+          </Button>
         </div>
 
         {/* Mobile Right */}
@@ -56,9 +63,11 @@ export default function Navbar() {
 
           <button
             onClick={() => setOpen(!open)}
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
             className="text-3xl text-slate-800 dark:text-white"
           >
-            {open ? <HiX /> : <HiMenu />}
+            {open ? <HiX aria-hidden="true" /> : <HiMenu aria-hidden="true" />}
           </button>
         </div>
       </div>
@@ -66,7 +75,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
 
       {open && (
-        <div className="border-t border-gray-200 bg-white dark:border-slate-800 dark:bg-slate-900 md:hidden">
+        <div className="border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 md:hidden">
 
           {menus.map((menu) => (
             <a
@@ -80,9 +89,14 @@ export default function Navbar() {
           ))}
 
           <div className="p-6">
-            <button className="w-full rounded-xl bg-blue-600 py-3 text-white transition hover:bg-blue-700">
+            <Button
+              href={profile.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full"
+            >
               Download CV
-            </button>
+            </Button>
           </div>
 
         </div>
