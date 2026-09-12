@@ -29,7 +29,7 @@ export default function Achievements() {
 
       <SectionTitle
         title="Achievements"
-        subtitle="Recognition & Certifications"
+        subtitle="Recognition"
       />
 
       <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
@@ -88,7 +88,8 @@ export default function Achievements() {
 
                   {item.description}
 
-                </p>              
+                </p>
+
                 </GlassCard>
 
             </motion.div>

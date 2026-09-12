@@ -12,9 +12,11 @@ export default function Navbar() {
   const menus = [
     "About",
     "Experience",
+    "Projects",
     "Skills",
     "Achievements",
-    "Projects",
+    "Certifications",
+    "Organizations",
     "Contact",
   ];
 
@@ -31,7 +33,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-6 xl:flex">
           {menus.map((menu) => (
             <a
               key={menu}
@@ -44,7 +46,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Right */}
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-4 xl:flex">
           <ThemeToggle />
 
           <Button
@@ -58,7 +60,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Right */}
-        <div className="flex items-center gap-3 md:hidden">
+        <div className="flex items-center gap-3 xl:hidden">
           <ThemeToggle />
 
           <button
@@ -75,7 +77,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
 
       {open && (
-        <div className="border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 md:hidden">
+        <div className="border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 xl:hidden">
 
           {menus.map((menu) => (
             <a
@@ -89,14 +91,24 @@ export default function Navbar() {
           ))}
 
           <div className="p-6">
-            <Button
-              href={profile.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full"
-            >
-              Download CV
-            </Button>
+            {profile.resumeAvailable ? (
+              <Button
+                href={profile.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
+                Download CV
+              </Button>
+            ) : (
+              <Button
+                disabled
+                title="CV upload coming soon"
+                className="w-full"
+              >
+                CV Coming Soon
+              </Button>
+            )}
           </div>
 
         </div>

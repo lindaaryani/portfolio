@@ -14,7 +14,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import GlassCard from "@/components/ui/GlassCard";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
-import { profile, stats } from "@/data/portfolio";
+import { profile, stats, education } from "@/data/portfolio";
 
 const highlights = [
   "Cloud Computing",
@@ -139,13 +139,17 @@ export default function About() {
                 </p>
 
                 <h4 className="mt-1 text-lg font-bold text-slate-900 dark:text-white">
-                  {profile.university}
+                  {education.institution}
                 </h4>
 
                 <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
-                  Information Systems
+                  {education.degree}
                   <br />
-                  2024 - Present
+                  {education.period}
+                </p>
+
+                <p className="mt-3 text-xs leading-5 text-slate-500 dark:text-slate-400">
+                  {education.relevantAreas.join(" · ")}
                 </p>
               </div>
             </div>

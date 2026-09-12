@@ -1,0 +1,988 @@
+diff --git a/app/page.tsx b/app/page.tsx
+index bcbc964..4a00ded 100644
+--- a/app/page.tsx
++++ b/app/page.tsx
+@@ -4,9 +4,11 @@ import Footer from "@/components/layout/Footer";
+ import Hero from "@/components/sections/Hero";
+ import About from "@/components/sections/About";
+ import Experience from "@/components/sections/Experience";
++import Projects from "@/components/sections/Projects";
+ import Skills from "@/components/sections/Skills";
+ import Achievements from "@/components/sections/Achievements";
+-import Projects from "@/components/sections/Projects";
++import Certifications from "@/components/sections/Certifications";
++import Organizations from "@/components/sections/Organizations";
+ import Contact from "@/components/sections/Contact";
+ 
+ export default function Home() {
+@@ -18,9 +20,11 @@ export default function Home() {
+         <Hero />
+         <About />
+         <Experience />
++        <Projects />
+         <Skills />
+         <Achievements />
+-        <Projects />
++        <Certifications />
++        <Organizations />
+         <Contact />
+       </main>
+ 
+diff --git a/components/layout/Navbar.tsx b/components/layout/Navbar.tsx
+index 24e9657..0732cfd 100644
+--- a/components/layout/Navbar.tsx
++++ b/components/layout/Navbar.tsx
+@@ -12,9 +12,11 @@ export default function Navbar() {
+   const menus = [
+     "About",
+     "Experience",
++    "Projects",
+     "Skills",
+     "Achievements",
+-    "Projects",
++    "Certifications",
++    "Organizations",
+     "Contact",
+   ];
+ 
+@@ -31,7 +33,7 @@ export default function Navbar() {
+         </a>
+ 
+         {/* Desktop Menu */}
+-        <div className="hidden items-center gap-8 md:flex">
++        <div className="hidden items-center gap-6 xl:flex">
+           {menus.map((menu) => (
+             <a
+               key={menu}
+@@ -44,7 +46,7 @@ export default function Navbar() {
+         </div>
+ 
+         {/* Desktop Right */}
+-        <div className="hidden items-center gap-4 md:flex">
++        <div className="hidden items-center gap-4 xl:flex">
+           <ThemeToggle />
+ 
+           <Button
+@@ -58,7 +60,7 @@ export default function Navbar() {
+         </div>
+ 
+         {/* Mobile Right */}
+-        <div className="flex items-center gap-3 md:hidden">
++        <div className="flex items-center gap-3 xl:hidden">
+           <ThemeToggle />
+ 
+           <button
+@@ -75,7 +77,7 @@ export default function Navbar() {
+       {/* Mobile Menu */}
+ 
+       {open && (
+-        <div className="border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 md:hidden">
++        <div className="border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 xl:hidden">
+ 
+           {menus.map((menu) => (
+             <a
+diff --git a/components/sections/Achievements.tsx b/components/sections/Achievements.tsx
+index 26a344f..a534aaa 100644
+--- a/components/sections/Achievements.tsx
++++ b/components/sections/Achievements.tsx
+@@ -29,7 +29,7 @@ export default function Achievements() {
+ 
+       <SectionTitle
+         title="Achievements"
+-        subtitle="Recognition & Certifications"
++        subtitle="Recognition"
+       />
+ 
+       <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+@@ -88,7 +88,8 @@ export default function Achievements() {
+ 
+                   {item.description}
+ 
+-                </p>              
++                </p>
++
+                 </GlassCard>
+ 
+             </motion.div>
+diff --git a/components/sections/Certifications.tsx b/components/sections/Certifications.tsx
+new file mode 100644
+index 0000000..8f8736e
+--- /dev/null
++++ b/components/sections/Certifications.tsx
+@@ -0,0 +1,70 @@
++"use client";
++
++import { motion } from "framer-motion";
++import { BadgeCheck } from "lucide-react";
++
++import SectionWrapper from "@/components/ui/SectionWrapper";
++import SectionTitle from "@/components/ui/SectionTitle";
++import GlassCard from "@/components/ui/GlassCard";
++
++import { certifications } from "@/data/portfolio";
++
++export default function Certifications() {
++  return (
++    <SectionWrapper id="certifications">
++
++      <SectionTitle
++        title="Certifications"
++        subtitle="Learning & Training"
++      />
++
++      <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
++
++        {certifications.map((item, index) => (
++
++          <motion.div
++            key={item.title}
++            initial={{
++              opacity: 0,
++              y: 30,
++            }}
++            whileInView={{
++              opacity: 1,
++              y: 0,
++            }}
++            viewport={{
++              once: true,
++            }}
++            transition={{
++              duration: .4,
++              delay: index * .08,
++            }}
++          >
++
++            <GlassCard className="flex h-full flex-col items-center gap-3 p-6 text-center">
++
++              <BadgeCheck
++                size={28}
++                className="text-blue-600 dark:text-blue-400"
++                aria-hidden="true"
++              />
++
++              <p className="font-semibold text-slate-900 dark:text-white">
++                {item.title}
++              </p>
++
++              <p className="text-sm text-slate-500 dark:text-slate-400">
++                {item.issuer} · {item.year}
++              </p>
++
++            </GlassCard>
++
++          </motion.div>
++
++        ))}
++
++      </div>
++
++    </SectionWrapper>
++  );
++}
+diff --git a/components/sections/Hero.tsx b/components/sections/Hero.tsx
+index 3bcc14c..25c90b3 100644
+--- a/components/sections/Hero.tsx
++++ b/components/sections/Hero.tsx
+@@ -151,7 +151,7 @@ export default function Hero() {
+             className="mt-8 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-400"
+           >
+ 
+-            {profile.description}
++            {profile.shortIntro}
+ 
+           </motion.p>
+ 
+diff --git a/components/sections/Organizations.tsx b/components/sections/Organizations.tsx
+new file mode 100644
+index 0000000..d1712f0
+--- /dev/null
++++ b/components/sections/Organizations.tsx
+@@ -0,0 +1,83 @@
++"use client";
++
++import { motion } from "framer-motion";
++import { Users } from "lucide-react";
++
++import SectionWrapper from "@/components/ui/SectionWrapper";
++import SectionTitle from "@/components/ui/SectionTitle";
++import GlassCard from "@/components/ui/GlassCard";
++import Badge from "@/components/ui/Badge";
++
++import { organizations } from "@/data/portfolio";
++
++export default function Organizations() {
++  return (
++    <SectionWrapper id="organizations">
++
++      <SectionTitle
++        title="Organizational & Volunteer Experience"
++        subtitle="Beyond the Classroom"
++      />
++
++      <div className="mt-16 grid gap-8 md:grid-cols-2">
++
++        {organizations.map((item, index) => (
++
++          <motion.div
++            key={`${item.role}-${item.org}`}
++            initial={{
++              opacity: 0,
++              y: 30,
++            }}
++            whileInView={{
++              opacity: 1,
++              y: 0,
++            }}
++            viewport={{
++              once: true,
++            }}
++            transition={{
++              duration: .5,
++              delay: index * .08,
++            }}
++          >
++
++            <GlassCard className="flex h-full flex-col">
++
++              <div className="flex items-start justify-between gap-4">
++
++                <div className="rounded-2xl bg-blue-100 p-3 dark:bg-blue-500/20">
++                  <Users
++                    size={24}
++                    className="text-blue-600 dark:text-blue-400"
++                    aria-hidden="true"
++                  />
++                </div>
++
++                <Badge>{item.period}</Badge>
++
++              </div>
++
++              <h3 className="mt-6 text-2xl font-bold text-slate-900 dark:text-white">
++                {item.role}
++              </h3>
++
++              <p className="mt-1 font-semibold text-blue-600 dark:text-blue-400">
++                {item.org}
++              </p>
++
++              <p className="mt-4 leading-7 text-slate-600 dark:text-slate-300">
++                {item.description}
++              </p>
++
++            </GlassCard>
++
++          </motion.div>
++
++        ))}
++
++      </div>
++
++    </SectionWrapper>
++  );
++}
+diff --git a/components/sections/Projects.tsx b/components/sections/Projects.tsx
+index 1ff33dd..11a31d0 100644
+--- a/components/sections/Projects.tsx
++++ b/components/sections/Projects.tsx
+@@ -3,7 +3,7 @@
+ import Image from "next/image";
+ import { motion } from "framer-motion";
+ import { FaGithub } from "react-icons/fa";
+-import { HiOutlineExternalLink, HiOutlineClock } from "react-icons/hi";
++import { HiOutlineExternalLink, HiOutlineClock, HiOutlinePhotograph } from "react-icons/hi";
+ 
+ import Badge from "@/components/ui/Badge";
+ import Button from "@/components/ui/Button";
+@@ -68,14 +68,23 @@ export default function Projects() {
+ 
+                 <div className="group relative overflow-hidden rounded-2xl">
+ 
+-                  <Image
+-                    src={project.image}
+-                    alt={`${project.title} project screenshot`}
+-                    width={900}
+-                    height={600}
+-                    sizes="(min-width: 1024px) 50vw, 100vw"
+-                    className="h-[320px] w-full object-cover transition duration-500 ease-out group-hover:scale-105"
+-                  />
++                  {project.placeholderImage ? (
++                    <div className="flex h-[320px] w-full flex-col items-center justify-center gap-3 bg-slate-100 text-slate-400 dark:bg-slate-800 dark:text-slate-500">
++                      <HiOutlinePhotograph size={40} aria-hidden="true" />
++                      <p className="px-6 text-center text-sm font-medium">
++                        Screenshot coming soon
++                      </p>
++                    </div>
++                  ) : (
++                    <Image
++                      src={project.image}
++                      alt={`${project.title} project screenshot`}
++                      width={900}
++                      height={600}
++                      sizes="(min-width: 1024px) 50vw, 100vw"
++                      className="h-[320px] w-full object-cover transition duration-500 ease-out group-hover:scale-105"
++                    />
++                  )}
+ 
+                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
+ 
+@@ -104,11 +113,12 @@ export default function Projects() {
+               }}
+             >
+ 
+-              <Badge>
+-
+-                Project {index + 1}
+-
+-              </Badge>
++              <div className="flex flex-wrap items-center gap-3">
++                <Badge>Project {index + 1}</Badge>
++                {project.source === "academic" && (
++                  <Badge tone="emerald">Academic Project</Badge>
++                )}
++              </div>
+ 
+               <h3 className="mt-6 text-4xl font-black text-slate-900 dark:text-white">
+ 
+@@ -122,6 +132,28 @@ export default function Projects() {
+ 
+               </p>
+ 
++              <div className="mt-6 space-y-4">
++
++                <div>
++                  <p className="text-xs font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400">
++                    Problem
++                  </p>
++                  <p className="mt-1 leading-7 text-slate-600 dark:text-slate-300">
++                    {project.problem}
++                  </p>
++                </div>
++
++                <div>
++                  <p className="text-xs font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400">
++                    My Contribution
++                  </p>
++                  <p className="mt-1 leading-7 text-slate-600 dark:text-slate-300">
++                    {project.contribution}
++                  </p>
++                </div>
++
++              </div>
++
+               <div className="mt-8 flex flex-wrap gap-3">
+ 
+                 {project.tech.map((tech) => (
+@@ -138,16 +170,18 @@ export default function Projects() {
+ 
+               <div className="mt-10 flex flex-wrap items-center gap-4">
+ 
+-                <Button
+-                  href={project.github}
+-                  target="_blank"
+-                  rel="noopener noreferrer"
+-                  variant="outline"
+-                  className="min-w-[140px]"
+-                >
+-                  <FaGithub className="mr-2" aria-hidden="true" />
+-                  GitHub
+-                </Button>
++                {project.github && (
++                  <Button
++                    href={project.github}
++                    target="_blank"
++                    rel="noopener noreferrer"
++                    variant="outline"
++                    className="min-w-[140px]"
++                  >
++                    <FaGithub className="mr-2" aria-hidden="true" />
++                    GitHub
++                  </Button>
++                )}
+ 
+                 {project.demo && project.demo !== "#" ? (
+                   <Button
+diff --git a/components/sections/Skills.tsx b/components/sections/Skills.tsx
+index 449ef33..f755204 100644
+--- a/components/sections/Skills.tsx
++++ b/components/sections/Skills.tsx
+@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
+ import SectionWrapper from "@/components/ui/SectionWrapper";
+ import SectionTitle from "@/components/ui/SectionTitle";
+ import GlassCard from "@/components/ui/GlassCard";
++import Badge from "@/components/ui/Badge";
+ 
+ import { skillCategories } from "@/data/portfolio";
+ 
+@@ -14,7 +15,7 @@ export default function Skills() {
+       <SectionTitle
+         badge="Skills"
+         title="Technologies I Use"
+-        subtitle="The technologies, frameworks, cloud platforms, and tools that I use in academic projects and personal development."
++        subtitle="The languages, frameworks, tools, and design methods I use in academic projects and real-world systems."
+       />
+ 
+       <div className="mt-16 space-y-14">
+@@ -33,37 +34,47 @@ export default function Skills() {
+               {category.title}
+             </h3>
+ 
+-            <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
+-              {category.items.map((item, index) => {
+-                const Icon = item.icon;
++            {category.items.length > 0 && (
++              <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
++                {category.items.map((item, index) => {
++                  const Icon = item.icon;
+ 
+-                return (
+-                  <motion.div
+-                    key={item.name}
+-                    initial={{ opacity: 0, scale: 0.9 }}
+-                    whileInView={{ opacity: 1, scale: 1 }}
+-                    viewport={{ once: true }}
+-                    transition={{
+-                      duration: 0.35,
+-                      delay: index * 0.05,
+-                    }}
+-                  >
+-                    <GlassCard className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center">
+-                      <Icon
+-                        size={42}
+-                        color={item.color}
+-                        className={item.invertOnDark ? "dark:invert" : undefined}
+-                        aria-hidden="true"
+-                      />
++                  return (
++                    <motion.div
++                      key={item.name}
++                      initial={{ opacity: 0, scale: 0.9 }}
++                      whileInView={{ opacity: 1, scale: 1 }}
++                      viewport={{ once: true }}
++                      transition={{
++                        duration: 0.35,
++                        delay: index * 0.05,
++                      }}
++                    >
++                      <GlassCard className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center">
++                        <Icon
++                          size={42}
++                          color={item.color}
++                          className={item.invertOnDark ? "dark:invert" : undefined}
++                          aria-hidden="true"
++                        />
+ 
+-                      <p className="font-semibold text-slate-700 dark:text-slate-200">
+-                        {item.name}
+-                      </p>
+-                    </GlassCard>
+-                  </motion.div>
+-                );
+-              })}
+-            </div>
++                        <p className="font-semibold text-slate-700 dark:text-slate-200">
++                          {item.name}
++                        </p>
++                      </GlassCard>
++                    </motion.div>
++                  );
++                })}
++              </div>
++            )}
++
++            {category.tags && category.tags.length > 0 && (
++              <div className={`flex flex-wrap gap-3 ${category.items.length > 0 ? "mt-5" : ""}`}>
++                {category.tags.map((tag) => (
++                  <Badge key={tag}>{tag}</Badge>
++                ))}
++              </div>
++            )}
+           </motion.div>
+         ))}
+       </div>
+diff --git a/data/portfolio.ts b/data/portfolio.ts
+index a95de3e..095329c 100644
+--- a/data/portfolio.ts
++++ b/data/portfolio.ts
+@@ -7,16 +7,22 @@ import {
+   SiReact,
+   SiNextdotjs,
+   SiTailwindcss,
++  SiFramer,
+   SiPhp,
+   SiMysql,
+-  SiGooglecloud,
+-  SiFirebase,
++  SiMariadb,
++  SiPhpmyadmin,
++  SiBootstrap,
++  SiXampp,
+   SiGit,
+   SiGithub,
+-  SiPostman,
+-  SiFigma,
++  SiGoogleappsscript,
++  SiKalilinux,
++  SiTryhackme,
++  SiApachenetbeanside,
+ } from "react-icons/si";
+-import { FaAws } from "react-icons/fa";
++import { DiJava } from "react-icons/di";
++import { TbBrandVscode } from "react-icons/tb";
+ 
+ // ===============================
+ // PROFILE
+@@ -34,10 +40,15 @@ export const profile = {
+   location: "Bali, Indonesia",
+ 
+   tagline:
+-    "Cloud Computing • Web Development • Cybersecurity",
++    "Full-Stack Web Development • UI/UX Design • Cybersecurity",
+ 
++  /** Short, punchy — used in the Hero. */
++  shortIntro:
++    "Information Systems student with a Software Engineering background. I build role-based systems for real operational problems, and I'm currently expanding into cybersecurity and product design.",
++
++  /** Fuller narrative — used in About, intentionally distinct from the Hero line. */
+   description:
+-    "I am an Information Systems student at ITB STIKOM Bali with a passion for building modern web applications, exploring cloud computing, and continuously learning new technologies to create impactful digital solutions.",
++    "I started in vocational Software Engineering before moving into Information Systems at ITB STIKOM Bali. Along the way I've built a role-based agricultural monitoring system, automated a manual payroll process with Google Apps Script, and spent time in customer-facing and admin roles that taught me how systems actually get used day to day. Outside of coursework, I train in public speaking and compete in Gateball at a provincial level. Right now I'm expanding into cybersecurity and iOS development, working toward product-focused engineering roles.",
+ 
+   image: "/images/profile.jpeg",
+ 
+@@ -58,15 +69,15 @@ export const profile = {
+ 
+ export const heroStats = [
+   {
+-    value: "10+",
++    value: "4",
+     label: "Projects",
+   },
+   {
+-    value: "8",
++    value: "4",
+     label: "Certificates",
+   },
+   {
+-    value: "2",
++    value: "1",
+     label: "Research",
+   },
+ ];
+@@ -77,48 +88,22 @@ export const heroStats = [
+ 
+ export const experiences = [
+   {
+-    year: "2024 - Present",
+-
+-    title: "Information Systems Student",
+-
+-    company: "ITB STIKOM Bali",
+-
+-    description:
+-      "Studying Information Systems with a strong interest in Cloud Computing, Web Development, and Cybersecurity while actively participating in academic and software development projects.",
+-  },
+-
+-  {
+-    year: "2026",
+-
+-    title: "Research Assistant",
+-
+-    company: "ITB STIKOM Bali",
+-
+-    description:
+-      "Contributed to academic research about family values and social criticism in Indonesian films. The publication received an official Copyright Registration Certificate (HKI).",
+-  },
+-
+-  {
+-    year: "2026",
++    year: "2023",
+ 
+-    title: "UKM Public Speaking",
++    title: "IT & Digital Operations Intern",
+ 
+-    company: "ITB STIKOM Bali",
++    company: "PT Teknologi Arcom Mediaksa",
+ 
+     description:
+-      "Active member participating in communication training, seminars, and public speaking events while improving teamwork and leadership skills.",
++      "Maintained product inventory and pricing databases to support daily commercial operations, collaborated on promotional and digital design assets, and organized technical operational documentation in a professional tech environment.",
+   },
+ 
+-  {
+-    year: "2026",
+-
+-    title: "Portfolio Website",
+-
+-    company: "Personal Project",
+-
+-    description:
+-      "Designed and developed a modern portfolio website using Next.js, TypeScript, Tailwind CSS, and Framer Motion.",
+-  },
++  // Two verified roles are pending exact company name / dates from the CV
++  // and are intentionally left out of the public site until confirmed:
++  // - Student Staff – Marketing Communication (payroll automation project)
++  // - Customer Service / Server, Coffee Shop Industry
++  // Add them here in the same { year, title, company, description } shape
++  // once the details are final — no component changes needed.
+ ];
+ 
+ // ===============================
+@@ -140,47 +125,73 @@ export type SkillItem = {
+ 
+ export type SkillCategory = {
+   title: string;
++  /** Technologies with a real, recognizable brand icon. */
+   items: SkillItem[];
++  /** Tools/skills genuinely used but without an available brand icon
++   * (e.g. HeidiSQL, AdminLTE) — shown as plain tags instead of a
++   * fabricated or mismatched logo. */
++  tags?: string[];
+ };
+ 
+ export const skillCategories: SkillCategory[] = [
+   {
+-    title: "Frontend",
++    title: "Programming",
+     items: [
++      { name: "PHP", icon: SiPhp, color: "#777BB4" },
++      { name: "Java", icon: DiJava, color: "#007396" },
+       { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
+       { name: "CSS3", icon: SiCss, color: "#1572B6" },
+       { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+-      { name: "React", icon: SiReact, color: "#61DAFB" },
+-      { name: "Next.js", icon: SiNextdotjs, color: "#000000", invertOnDark: true },
+-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
++      { name: "Google Apps Script", icon: SiGoogleappsscript, color: "#4285F4" },
+     ],
+   },
+ 
+   {
+-    title: "Backend",
++    title: "Database",
+     items: [
+-      { name: "PHP", icon: SiPhp, color: "#777BB4" },
+       { name: "MySQL", icon: SiMysql, color: "#4479A1" },
++      { name: "MariaDB", icon: SiMariadb, color: "#003545" },
++      { name: "phpMyAdmin", icon: SiPhpmyadmin, color: "#6C78AF" },
+     ],
++    tags: ["HeidiSQL", "MySQL Workbench"],
+   },
+ 
+   {
+-    title: "Cloud",
++    title: "Frameworks & Tools",
+     items: [
+-      { name: "Google Cloud", icon: SiGooglecloud, color: "#4285F4" },
+-      { name: "AWS", icon: FaAws, color: "#FF9900" },
+-      { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
++      { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
++      { name: "XAMPP", icon: SiXampp, color: "#FB7A24" },
++      { name: "NetBeans", icon: SiApachenetbeanside, color: "#1B6AC6" },
++      { name: "VS Code", icon: TbBrandVscode, color: "#007ACC" },
++      { name: "Git", icon: SiGit, color: "#F05032" },
++      { name: "GitHub", icon: SiGithub, color: "#181717", invertOnDark: true },
+     ],
++    tags: ["AdminLTE", "Laragon"],
+   },
+ 
+   {
+-    title: "Tools",
++    title: "Cybersecurity",
+     items: [
+-      { name: "Git", icon: SiGit, color: "#F05032" },
+-      { name: "GitHub", icon: SiGithub, color: "#181717", invertOnDark: true },
+-      { name: "Postman", icon: SiPostman, color: "#FF6C37" },
+-      { name: "Figma", icon: SiFigma, color: "#F24E1E" },
++      { name: "Kali Linux", icon: SiKalilinux, color: "#557C94" },
++      { name: "TryHackMe", icon: SiTryhackme, color: "#212C42", invertOnDark: true },
++    ],
++    tags: ["Basic Cybersecurity"],
++  },
++
++  {
++    title: "System & Design",
++    items: [],
++    tags: ["System Analysis", "UML", "ERD", "Database Design", "UI/UX Design"],
++  },
++
++  {
++    title: "Portfolio / Web Development",
++    items: [
++      { name: "React", icon: SiReact, color: "#61DAFB" },
++      { name: "Next.js", icon: SiNextdotjs, color: "#000000", invertOnDark: true },
++      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
++      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
++      { name: "Framer Motion", icon: SiFramer, color: "#0055FF" },
+     ],
+   },
+ ];
+@@ -188,64 +199,112 @@ export const skillCategories: SkillCategory[] = [
+ // PROJECTS
+ // ===============================
+ 
+-export const projects = [
++export type ProjectSource = "cv" | "academic";
++
++export const projects: {
++  title: string;
++  description: string;
++  problem: string;
++  contribution: string;
++  image: string;
++  placeholderImage?: boolean;
++  tech: string[];
++  github: string;
++  demo: string;
++  source: ProjectSource;
++}[] = [
+   {
+     title: "SIPATAN",
+ 
+     description:
+-      "Agricultural Information System for Badung Regency developed using PHP Native and MySQL. Features include role-based authentication, farmer management, harvest verification, commodity management, and reporting dashboard.",
++      "A role-based agricultural and food security information system built for Badung Regency.",
++
++    problem:
++      "Farmer registration, harvest verification, and commodity reporting were handled manually, with no shared system for Admin, Farmer, and Head of Department roles.",
++
++    contribution:
++      "Designed the system workflows, database structure, and role-based access, then implemented data management, harvest verification, and a reporting dashboard.",
+ 
+     image: "/images/project1.png",
+ 
+-    tech: [
+-      "PHP",
+-      "MySQL",
+-      "Bootstrap",
+-      "Laragon",
+-    ],
++    tech: ["PHP Native", "MySQL / MariaDB", "Bootstrap", "AdminLTE", "Laragon"],
+ 
+     github: "https://github.com/lindaaryani",
+ 
+     demo: "#",
++
++    source: "cv",
++  },
++
++  {
++    title: "Automated Payroll Slip System",
++
++    description:
++      "A script-based system that generates individual payroll slips automatically from structured spreadsheet data.",
++
++    problem:
++      "Monthly payroll was calculated and distributed by hand, which was slow and left room for calculation errors.",
++
++    contribution:
++      "Identified the repetitive process, then built a Google Apps Script automation that connects structured payroll data to dynamic, individual PDF payslip generation.",
++
++    image: "/images/payroll-slip-system.png",
++    placeholderImage: true,
++
++    tech: ["Google Apps Script", "Google Sheets", "JavaScript"],
++
++    github: "https://github.com/lindaaryani",
++
++    demo: "#",
++
++    source: "cv",
+   },
+ 
+   {
+     title: "Decision Support System",
+ 
+     description:
+-      "Tourism recommendation system using the MOORA method to rank tourist destinations in Badung Regency based on multiple decision criteria.",
++      "A tourism recommendation system that ranks destinations in Badung Regency using the MOORA method.",
++
++    problem:
++      "Ranking tourist destinations across multiple, sometimes conflicting decision criteria is difficult to do consistently by hand.",
++
++    contribution:
++      "Implemented the MOORA multi-criteria decision-making method to rank destinations based on weighted criteria.",
+ 
+     image: "/images/project2.png",
+ 
+-    tech: [
+-      "PHP",
+-      "MySQL",
+-      "MOORA",
+-    ],
++    tech: ["PHP", "MySQL", "MOORA"],
+ 
+     github: "https://github.com/lindaaryani",
+ 
+     demo: "#",
++
++    source: "academic",
+   },
+ 
+   {
+-    title: "Personal Portfolio",
++    title: "Family Values & Social Criticism in Sumala",
+ 
+     description:
+-      "Modern responsive portfolio website built with Next.js, TypeScript, Tailwind CSS, and Framer Motion featuring dark mode, smooth animations, and SEO optimization.",
++      "A semiotic research project analyzing family values and social criticism in the Indonesian film Sumala.",
+ 
+-    image: "/images/project3.png",
++    problem:
++      "Family values and social criticism embedded in the film were not yet formally documented or analyzed.",
+ 
+-    tech: [
+-      "Next.js",
+-      "TypeScript",
+-      "Tailwind CSS",
+-      "Framer Motion",
+-    ],
++    contribution:
++      "Applied Roland Barthes' semiotic analysis to the film. The research was officially registered with Indonesia's Intellectual Property Office (HKI No. 001303075).",
+ 
+-    github: "https://github.com/lindaaryani",
++    image: "/images/sumala-research.png",
++    placeholderImage: true,
++
++    tech: ["Roland Barthes Semiotics", "Qualitative Research"],
++
++    github: "",
+ 
+     demo: "#",
++
++    source: "cv",
+   },
+ ];
+ 
+@@ -258,28 +317,28 @@ export const achievements = [
+     title: "Beasiswa Unggulan 2024",
+ 
+     description:
+-      "Awarded the Beasiswa Unggulan scholarship for academic achievement and personal development.",
++      "Awarded the Beasiswa Unggulan scholarship by Kemendikbudristek for academic achievement and personal development.",
+   },
+ 
+   {
+     title: "HKI Copyright Registration",
+ 
+     description:
+-      "Research publication officially registered with Indonesia's Intellectual Property Office (HKI).",
++      "Research on family values and social criticism in the film Sumala officially registered with Indonesia's Intellectual Property Office (HKI No. 001303075).",
+   },
+ 
+   {
+-    title: "Cisco Cybersecurity",
++    title: "2nd Place – Women's Team Gateball",
+ 
+     description:
+-      "Completed Cisco Cybersecurity training covering networking, security fundamentals, and cyber threats.",
++      "PORPROV Bali 2025, provincial-level competition.",
+   },
+ 
+   {
+-    title: "Gateball Athlete",
++    title: "3rd Place – Women's Doubles Gateball",
+ 
+     description:
+-      "Represented Bali in regional Gateball competitions and achieved several provincial-level awards.",
++      "PORPROV Bali 2025, provincial-level competition.",
+   },
+ 
+   {
+@@ -289,28 +348,90 @@ export const achievements = [
+       "Actively participating in Google Cloud Arcade to strengthen cloud computing skills through hands-on labs.",
+   },
+ ];
++// ===============================
++// CERTIFICATIONS
++// ===============================
++
++export const certifications = [
++  {
++    title: "Junior Assistant Programmer",
++    issuer: "BNSP",
++    year: "2024",
++  },
++  {
++    title: "Cisco Cybersecurity Course",
++    issuer: "Cisco",
++    year: "2024",
++  },
++  {
++    title: "Android Career Kickstart",
++    issuer: "Dicoding",
++    year: "2024",
++  },
++  {
++    title: "Career Class",
++    issuer: "LinkedIn",
++    year: "2026",
++  },
++];
++
++// ===============================
++// ORGANIZATIONAL & VOLUNTEER EXPERIENCE
++// ===============================
++
++export const organizations = [
++  {
++    role: "Member",
++    org: "SYNTAX Public Speaking",
++    period: "2026 – Present",
++    description:
++      "Training in impromptu speaking, vocal control, structured argumentation, and team presentation dynamics.",
++  },
++  {
++    role: "Committee Member",
++    org: "Campus Seminar, ITB STIKOM Bali",
++    period: "2026",
++    description:
++      "Handled operational logistics, rundown coordination, and participant administration for a university seminar.",
++  },
++  {
++    role: "Volunteer Referee",
++    org: "PORJAR Bali",
++    period: "2026",
++    description:
++      "Officiated regional student Gateball matches, enforcing competition rules, fair play, and rapid on-field decision-making.",
++  },
++  {
++    role: "Competitive Athlete",
++    org: "Gateball, Bali Circuit",
++    period: "2024 – Present",
++    description:
++      "Competing in provincial tournaments, maintaining tactical training, strategic planning, and teamwork under pressure.",
++  },
++];
++
+ // ===============================
+ // ABOUT STATS
+ // ===============================
+ 
+ export const stats = [
+   {
+-    number: 10,
++    number: 4,
+     title: "Projects",
+   },
+ 
+   {
+-    number: 8,
++    number: 4,
+     title: "Certificates",
+   },
+ 
+   {
+-    number: 2,
++    number: 1,
+     title: "Research",
+   },
+ 
+   {
+-    number: 5,
++    number: 4,
+     title: "Organizations",
+   },
+ ];

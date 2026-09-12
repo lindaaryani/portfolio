@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-
 import { motion } from "framer-motion";
 
 import {
@@ -20,7 +19,6 @@ import GradientText from "@/components/ui/GradientText";
 
 import {
   profile,
-  heroStats,
 } from "@/data/portfolio";
 
 export default function Hero() {
@@ -53,7 +51,7 @@ export default function Hero() {
             x: 0,
           }}
           transition={{
-            duration: .8,
+            duration: 0.8,
           }}
           className="flex-1"
         >
@@ -78,8 +76,8 @@ export default function Hero() {
               y: 0,
             }}
             transition={{
-              delay: .2,
-              duration: .8,
+              delay: 0.2,
+              duration: 0.8,
             }}
             className="mt-8 text-5xl font-black leading-tight text-slate-900 md:text-7xl dark:text-white"
           >
@@ -91,9 +89,7 @@ export default function Hero() {
             I&apos;m{" "}
 
             <GradientText>
-
               {profile.nickname}
-
             </GradientText>
 
           </motion.h1>
@@ -108,7 +104,7 @@ export default function Hero() {
               opacity: 1,
             }}
             transition={{
-              delay: .35,
+              delay: 0.35,
             }}
             className="mt-6 text-2xl font-bold text-blue-600 dark:text-blue-400"
           >
@@ -127,7 +123,7 @@ export default function Hero() {
               opacity: 1,
             }}
             transition={{
-              delay: .45,
+              delay: 0.45,
             }}
             className="mt-4 text-lg font-medium text-slate-600 dark:text-slate-300"
           >
@@ -146,12 +142,12 @@ export default function Hero() {
               opacity: 1,
             }}
             transition={{
-              delay: .55,
+              delay: 0.55,
             }}
             className="mt-8 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-400"
           >
 
-            {profile.description}
+            {profile.shortIntro}
 
           </motion.p>
 
@@ -165,7 +161,7 @@ export default function Hero() {
               opacity: 1,
             }}
             transition={{
-              delay: .7,
+              delay: 0.7,
             }}
             className="mt-10 flex flex-wrap gap-4"
           >
@@ -174,18 +170,28 @@ export default function Hero() {
               View Projects
             </Button>
 
-            <Button
-              href={profile.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="outline"
-            >
-              Download CV
-            </Button>
+            {profile.resumeAvailable ? (
+              <Button
+                href={profile.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="outline"
+              >
+                Download CV
+              </Button>
+            ) : (
+              <Button
+                disabled
+                variant="outline"
+                title="CV upload coming soon"
+              >
+                CV Coming Soon
+              </Button>
+            )}
 
           </motion.div>
 
-                    {/* Social */}
+          {/* Social */}
 
           <motion.div
             initial={{ opacity: 0 }}
@@ -193,6 +199,7 @@ export default function Hero() {
             transition={{ delay: 0.9 }}
             className="mt-10 flex items-center gap-6"
           >
+
             <a
               href={profile.github}
               target="_blank"
@@ -220,28 +227,9 @@ export default function Hero() {
             >
               <HiOutlineMail aria-hidden="true" />
             </a>
+
           </motion.div>
 
-          {/* Stats */}
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-            className="mt-14 grid max-w-xl grid-cols-3 gap-6"
-          >
-            {heroStats.map((item) => (
-              <div key={item.label}>
-                <p className="text-3xl font-black text-blue-600 dark:text-blue-400">
-                  {item.value}
-                </p>
-
-                <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
-                  {item.label}
-                </p>
-              </div>
-            ))}
-          </motion.div>
         </motion.div>
 
         {/* RIGHT */}
@@ -260,19 +248,21 @@ export default function Hero() {
           }}
           className="relative flex flex-1 items-center justify-center"
         >
+
           <div className="absolute h-[520px] w-[520px] rounded-full bg-blue-500/10 blur-3xl" />
 
           <div className="relative rounded-full bg-gradient-to-br from-blue-600 to-blue-400 p-2 shadow-2xl">
+
             <div className="rounded-full bg-white p-3 dark:bg-slate-900">
-              <Image
-                src={profile.image}
-                alt={profile.name}
-                width={420}
-                height={420}
-                priority
-                className="h-[420px] w-[420px] rounded-full object-cover lg:h-[470px] lg:w-[470px]"
-              />
+
+              <img
+  src="/images/linda.jpeg"
+  alt="Ni Kadek Linda Aryani"
+  className="h-[420px] w-[420px] rounded-full object-cover lg:h-[470px] lg:w-[470px]"
+/>
+
             </div>
+
           </div>
 
           {/* Floating Card */}
@@ -287,6 +277,7 @@ export default function Hero() {
             }}
             className="absolute -left-5 top-16 rounded-2xl border border-white/30 bg-white/80 px-5 py-4 shadow-xl backdrop-blur-xl dark:border-slate-700 dark:bg-slate-900/80"
           >
+
             <p className="text-sm text-slate-500 dark:text-slate-400">
               Currently
             </p>
@@ -294,6 +285,7 @@ export default function Hero() {
             <p className="font-bold text-slate-900 dark:text-white">
               {profile.university}
             </p>
+
           </motion.div>
 
           <motion.div
@@ -306,6 +298,7 @@ export default function Hero() {
             }}
             className="absolute -right-6 bottom-20 rounded-2xl border border-white/30 bg-white/80 px-5 py-4 shadow-xl backdrop-blur-xl dark:border-slate-700 dark:bg-slate-900/80"
           >
+
             <p className="text-sm text-slate-500 dark:text-slate-400">
               Location
             </p>
@@ -313,8 +306,11 @@ export default function Hero() {
             <p className="font-bold text-slate-900 dark:text-white">
               {profile.location}
             </p>
+
           </motion.div>
+
         </motion.div>
+
       </div>
 
       {/* Scroll */}
@@ -333,6 +329,7 @@ export default function Hero() {
       >
         <HiArrowDown size={30} aria-hidden="true" />
       </motion.a>
+
     </section>
   );
 }
