@@ -60,6 +60,22 @@ export const profile = {
 resumeAvailable: true,
 };
 
+
+// ===============================
+// CURRENT LEARNING
+// ===============================
+
+export const currentLearning = {
+  title: "Langganan Learning Path Pemula: iOS Developer",
+  provider: "Dicoding",
+  period: "2026",
+  modules: [
+    "Belajar Membuat Aplikasi iOS untuk Pemula",
+    "Swift",
+    "iOS Development",
+  ],
+};
+
 // ===============================
 // EDUCATION
 // ===============================
