@@ -54,7 +54,9 @@ export default function Skills() {
                         <Icon
                           size={42}
                           color={item.color}
-                          className={item.invertOnDark ? "dark:invert" : undefined}
+                          className={
+                            item.invertOnDark ? "dark:invert" : undefined
+                          }
                           aria-hidden="true"
                         />
 
@@ -69,7 +71,11 @@ export default function Skills() {
             )}
 
             {category.tags && category.tags.length > 0 && (
-              <div className={`flex flex-wrap gap-3 ${category.items.length > 0 ? "mt-5" : ""}`}>
+              <div
+                className={`flex flex-wrap gap-3 ${
+                  category.items.length > 0 ? "mt-5" : ""
+                }`}
+              >
                 {category.tags.map((tag) => (
                   <Badge key={tag}>{tag}</Badge>
                 ))}

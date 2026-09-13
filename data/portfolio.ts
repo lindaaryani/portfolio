@@ -30,7 +30,7 @@ import { TbBrandVscode } from "react-icons/tb";
 
 export const profile = {
   name: "Ni Kadek Linda Aryani",
-  nickname: "Linda",
+  nickname: "Linda Aryani",
   role: "Information Systems Student",
   university: "ITB STIKOM Bali",
   location: "Bali, Indonesia",
@@ -39,9 +39,9 @@ export const profile = {
     "Full-Stack Web Development • UI/UX Design • Cybersecurity",
 
   shortIntro:
-    "Information Systems student with a Software Engineering background. I build role-based systems for real operational problems, and I'm currently expanding into cybersecurity and product design.",
-
+  "With a background in Software Engineering and Information Systems, I enjoy building practical solutions for problems people actually face. My experience ranges from web development and workflow automation to system analysis and UI/UX. I’m currently exploring cybersecurity and iOS development, with a growing interest in building useful, user-focused products.",
   description:
+  
     "I started in vocational Software Engineering before moving into Information Systems at ITB STIKOM Bali. Along the way, I've built a role-based agricultural monitoring system, automated a manual payroll process with Google Apps Script, and spent time in customer-facing and administrative roles that taught me how systems actually get used day to day. Outside of coursework, I train in public speaking and compete in Gateball at a provincial level. Right now, I'm expanding into cybersecurity and iOS development, working toward product-focused engineering roles.",
 
   // FOTO PROFILE

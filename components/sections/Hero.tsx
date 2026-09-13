@@ -81,17 +81,16 @@ export default function Hero() {
             }}
             className="mt-8 text-5xl font-black leading-tight text-slate-900 md:text-7xl dark:text-white"
           >
+            <span className="block">
+              Hi,
+            </span>
 
-            Hi,
-
-            <br />
-
-            I&apos;m{" "}
-
-            <GradientText>
-              {profile.nickname}
-            </GradientText>
-
+            <span className="block whitespace-nowrap">
+              I&apos;m{" "}
+              <GradientText>
+                {profile.nickname}
+              </GradientText>
+            </span>
           </motion.h1>
 
           {/* Role */}
@@ -144,7 +143,7 @@ export default function Hero() {
             transition={{
               delay: 0.55,
             }}
-            className="mt-8 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-400"
+            className="mt-8 max-w-2xl text-justify text-lg leading-8 text-slate-600 dark:text-slate-400"
           >
 
             {profile.shortIntro}
@@ -256,10 +255,10 @@ export default function Hero() {
             <div className="rounded-full bg-white p-3 dark:bg-slate-900">
 
               <img
-  src="/images/linda.jpeg"
-  alt="Ni Kadek Linda Aryani"
-  className="h-[420px] w-[420px] rounded-full object-cover lg:h-[470px] lg:w-[470px]"
-/>
+                src="/images/linda.jpeg"
+                alt="Ni Kadek Linda Aryani"
+                className="h-[420px] w-[420px] rounded-full object-cover lg:h-[470px] lg:w-[470px]"
+              />
 
             </div>
 

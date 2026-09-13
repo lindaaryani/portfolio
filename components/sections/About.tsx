@@ -32,9 +32,7 @@ export default function About() {
       />
 
       <div className="mt-16 grid gap-14 lg:grid-cols-2">
-
         {/* LEFT */}
-
         <motion.div
           initial={{
             opacity: 0,
@@ -48,49 +46,35 @@ export default function About() {
             once: true,
           }}
           transition={{
-            duration: .6,
+            duration: 0.6,
           }}
         >
-
           <h3 className="text-4xl font-black text-slate-900 dark:text-white">
-
             Building Digital Solutions with Curiosity.
-
           </h3>
 
-          <p className="mt-8 leading-8 text-slate-600 dark:text-slate-300">
-
+          <p className="mt-8 text-justify text-lg leading-8 text-slate-600 dark:text-slate-300">
             {profile.description}
-
           </p>
 
           <div className="mt-10 space-y-5">
-
             {highlights.map((item) => (
-
               <div
                 key={item}
                 className="flex items-center gap-4"
               >
-
                 <div className="rounded-full bg-blue-100 p-2 dark:bg-blue-500/20">
-
                   <HiCheckCircle
-                    className="text-xl text-blue-600"
+                    className="text-xl text-blue-600 dark:text-blue-400"
+                    aria-hidden="true"
                   />
-
                 </div>
 
                 <span className="font-medium text-slate-700 dark:text-slate-200">
-
                   {item}
-
                 </span>
-
               </div>
-
             ))}
-
           </div>
 
           <div className="mt-14 grid grid-cols-2 gap-8 border-t border-slate-200 pt-10 sm:grid-cols-4 dark:border-slate-800">
@@ -99,17 +83,16 @@ export default function About() {
                 <p className="text-3xl font-black text-blue-600 dark:text-blue-400">
                   <AnimatedCounter end={item.number} />
                 </p>
+
                 <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
                   {item.title}
                 </p>
               </div>
             ))}
           </div>
-
         </motion.div>
 
         {/* RIGHT */}
-
         <motion.div
           initial={{
             opacity: 0,
@@ -123,14 +106,18 @@ export default function About() {
             once: true,
           }}
           transition={{
-            duration: .6,
+            duration: 0.6,
           }}
-          className="grid gap-6 sm:grid-cols-2"
+          className="grid items-start gap-6 sm:grid-cols-2"
         >
-                    <GlassCard>
-            <div className="flex items-center gap-4">
-              <div className="rounded-2xl bg-blue-100 p-3 dark:bg-blue-500/20">
-                <HiAcademicCap className="text-3xl text-blue-600 dark:text-blue-400" />
+          {/* EDUCATION */}
+          <GlassCard className="h-fit">
+            <div className="flex items-start gap-4">
+              <div className="shrink-0 rounded-2xl bg-blue-100 p-3 dark:bg-blue-500/20">
+                <HiAcademicCap
+                  className="text-3xl text-blue-600 dark:text-blue-400"
+                  aria-hidden="true"
+                />
               </div>
 
               <div>
@@ -155,10 +142,14 @@ export default function About() {
             </div>
           </GlassCard>
 
-          <GlassCard>
-            <div className="flex items-center gap-4">
-              <div className="rounded-2xl bg-blue-100 p-3 dark:bg-blue-500/20">
-                <HiCode className="text-3xl text-blue-600 dark:text-blue-400" />
+          {/* CURRENT FOCUS */}
+          <GlassCard className="h-fit">
+            <div className="flex items-start gap-4">
+              <div className="shrink-0 rounded-2xl bg-blue-100 p-3 dark:bg-blue-500/20">
+                <HiCode
+                  className="text-3xl text-blue-600 dark:text-blue-400"
+                  aria-hidden="true"
+                />
               </div>
 
               <div>
@@ -181,10 +172,14 @@ export default function About() {
             </div>
           </GlassCard>
 
-          <GlassCard>
-            <div className="flex items-center gap-4">
-              <div className="rounded-2xl bg-emerald-100 p-3 dark:bg-emerald-500/20">
-                <HiLocationMarker className="text-3xl text-emerald-600 dark:text-emerald-400" />
+          {/* LOCATION */}
+          <GlassCard className="h-fit">
+            <div className="flex items-start gap-4">
+              <div className="shrink-0 rounded-2xl bg-emerald-100 p-3 dark:bg-emerald-500/20">
+                <HiLocationMarker
+                  className="text-3xl text-emerald-600 dark:text-emerald-400"
+                  aria-hidden="true"
+                />
               </div>
 
               <div>
@@ -197,16 +192,21 @@ export default function About() {
                 </h4>
 
                 <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
-                  Available for remote collaboration and internship opportunities.
+                  Available for remote collaboration and internship
+                  opportunities.
                 </p>
               </div>
             </div>
           </GlassCard>
 
-          <GlassCard>
-            <div className="flex items-center gap-4">
-              <div className="rounded-2xl bg-blue-100 p-3 dark:bg-blue-500/20">
-                <HiSparkles className="text-3xl text-blue-600 dark:text-blue-400" />
+          {/* CAREER GOAL */}
+          <GlassCard className="h-fit">
+            <div className="flex items-start gap-4">
+              <div className="shrink-0 rounded-2xl bg-blue-100 p-3 dark:bg-blue-500/20">
+                <HiSparkles
+                  className="text-3xl text-blue-600 dark:text-blue-400"
+                  aria-hidden="true"
+                />
               </div>
 
               <div>
@@ -219,15 +219,14 @@ export default function About() {
                 </h4>
 
                 <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
-                  Building impactful digital products while continuously learning modern technologies.
+                  Building impactful digital products while continuously
+                  learning modern technologies.
                 </p>
               </div>
             </div>
           </GlassCard>
-
         </motion.div>
       </div>
     </SectionWrapper>
   );
 }
-        

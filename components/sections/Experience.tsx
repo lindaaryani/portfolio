@@ -44,67 +44,64 @@ export default function Experience() {
             const Icon = iconFor(item.title);
 
             return (
-            <motion.div
-              key={item.title}
-              initial={{
-                opacity: 0,
-                y: 40,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{
-                once: true,
-              }}
-              transition={{
-                duration: .5,
-                delay: index * .08,
-              }}
-              className="relative flex gap-5 sm:gap-8"
-            >
+              <motion.div
+                key={item.title}
+                initial={{
+                  opacity: 0,
+                  y: 40,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                viewport={{
+                  once: true,
+                }}
+                transition={{
+                  duration: .5,
+                  delay: index * .08,
+                }}
+                className="relative flex gap-5 sm:gap-8"
+              >
 
-              {/* Timeline Dot */}
+                {/* Timeline Dot */}
 
-              <div className="relative z-10 mt-5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-600 shadow-lg sm:h-12 sm:w-12">
+                <div className="relative z-10 mt-5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-600 shadow-lg sm:h-12 sm:w-12">
 
-                <Icon
-                  className="text-xl text-white sm:text-2xl"
-                  aria-hidden="true"
-                />
+                  <Icon
+                    className="text-xl text-white sm:text-2xl"
+                    aria-hidden="true"
+                  />
 
-              </div>
+                </div>
 
-              {/* Card */}
+                {/* Card */}
 
-              <GlassCard className="flex-1">
+                <GlassCard className="flex-1">
 
-                <Badge>{item.year}</Badge>
+                  <Badge>{item.year}</Badge>
 
-                <h3 className="mt-5 text-2xl font-bold text-slate-900 dark:text-white">
+                  <h3 className="mt-5 text-2xl font-bold text-slate-900 dark:text-white">
+                    {item.title}
+                  </h3>
 
-                  {item.title}
+                  <p className="mt-2 font-semibold text-blue-600 dark:text-blue-400">
+                    {item.company}
+                  </p>
 
-                </h3>
+                  {/* Description */}
 
-                <p className="mt-2 font-semibold text-blue-600 dark:text-blue-400">
+                  <p className="mt-5 text-justify leading-8 text-slate-600 dark:text-slate-300">
+                    {item.description}
+                  </p>
 
-                  {item.company}
+                </GlassCard>
 
-                </p>
-
-                <p className="mt-5 leading-8 text-slate-600 dark:text-slate-300">
-
-                  {item.description}
-
-                </p>
-
-              </GlassCard>
-
-            </motion.div>
+              </motion.div>
             );
           })}
-          </div>
+
+        </div>
       </div>
     </SectionWrapper>
   );

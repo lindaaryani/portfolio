@@ -36,7 +36,7 @@ export default function SectionTitle({
         <GradientText>{title}</GradientText>
       </h2>
 
-      <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-400">
+      <p className="mt-5 max-w-5xl text-lg leading-8 text-slate-600 dark:text-slate-400">
         {subtitle}
       </p>
     </motion.div>
